@@ -1,0 +1,25 @@
+{
+  "name": "jsdc2018",
+  "version": "1.0.0",
+  "description": "JSDC Taiwan 2018 Main Website",
+  "main": "ndex.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsdc-core/jsdc2018.git"
+  },
+  "keywords": [
+    "jsdc",
+    "jsdc2018"
+  ],
+  "author": "webber",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jsdc-core/jsdc2018/issues"
+  },
+  "homepage": "https://github.com/jsdc-core/jsdc2018#readme"
+}
