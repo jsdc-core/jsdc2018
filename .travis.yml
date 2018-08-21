@@ -1,0 +1,24 @@
+language: node_js
+node_js:
+- '6'
+cache: yarn
+before_install:
+- openssl aes-256-cbc -K $encrypted_093d46b61b77_key -iv $encrypted_093d46b61b77_iv
+  -in .travis/id_rsa_jsdc.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp .travis/ssh_config ~/.ssh/config
+- git config --global user.name "JSDC Taiwan"
+- git config --global user.email hq@jsdc.tw
+- git clone -b gh-pages git@github.com:jsdc-core/jsdc2017.git dist
+install:
+- yarn install
+script:
+- npm run build
+- npm run deploy:ci
+branches:
+  only:
+  - develop
+notifications:
+  email: false

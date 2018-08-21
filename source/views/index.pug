@@ -1,0 +1,61 @@
+extends ./partials/_layout
+
+block content
+  //- Header
+  section#header
+    .container
+      .title.row
+        .logo.col-md-6
+          img(src='./images/official/jsdc-logo.svg')
+        .jsdc-full-name.col-md-6
+          span JavaScript
+          span Developer
+          span Conference
+          span November 04-05, 2017
+
+      .slogan.row
+        .col-md-12
+          span Be
+          span  A
+          span  Co
+          span der
+      .count-down.row
+        .content.col-md-12
+          | countdown ticket
+        .clearfix
+        .time-content
+          .date
+            | --
+          .hours
+            | --
+          .minutes
+            | --
+          .seconds
+            | --
+        .conference-and-count-down-info
+          .info
+            | 2017 年 11 月 4 - 5 正式登場
+          .position
+            | 臺灣大學 社會科學院
+
+  section#ticket
+    .container
+      .row
+        .col-md-12
+          header.text-center
+            h2 售票資訊
+      .ticket-container.row
+        .ticket-info.col-md-12
+          .ticket-1
+            h3 JSDC 2017 晚鳥票
+            h4 November 04-05, 2017
+            .ticket-price
+              | TWD 3,950
+            a.ticket-booking(href="https://kktix.com/events/jsdc2017/registrations/new", target="_blank")
+              | BOOK NOW
+
+block js
+  script.
+    setTimeout(function(){
+      document.querySelectorAll('#navbar ul li')[0].classList.add('active');
+    }, 0);

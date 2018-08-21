@@ -1,0 +1,37 @@
+nav#navbar.navbar
+  .container.text-center
+    .navbar-header
+      .navbar-brand
+        a(href='/')
+          img(itemprop="image" src="/images/official/jsdc-logo.svg" alt="JSDC 2017")
+          //- img.image.img-responsive(itemprop="image" src="/images/jsdc-2017.png" alt="JSDC 2017")
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-mobile', aria-expanded='false' aria-controls='#navbar-mobile')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+    .collapse.navbar-collapse#navbar-mobile(aria-expanded='false')
+      ul.nav.navbar-nav
+        li
+          a(href="/") 首頁
+        li
+          a(href="/about.html") 關於
+        li
+          a(href="/news.html") 最新消息
+        li
+          a(href="/venue.html") 會場
+        li
+          a(href="/speaker.html") 講者
+        li
+          a(href="/agenda.html") 議程
+        li
+          a(href="/sponsors.html") 合作夥伴
+        li
+          a(href="/jobs.html") 徵才
+        li
+          a(href="https://goo.gl/forms/uIF7hMhfYP1dZQrE2" target="_blank") 贊助書索取
+        li#nav-fb-share(style="margin-top:10px;")
+          include _fb-share
+          .fb-share-button(data-href='http://2017.jsdc.tw/', data-layout='button', data-size='small', data-mobile-iframe='true')
+            a.fb-xfbml-parse-ignore(target='_blank', href='https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F2017.jsdc.tw%2F&src=sdkpreparse')
+

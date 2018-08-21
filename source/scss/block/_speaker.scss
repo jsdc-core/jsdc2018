@@ -1,0 +1,31 @@
+#speaker {
+
+    .grid-item
+    {
+        .is-keynote {
+            position: absolute;
+        }
+        .img-circle {
+            width: 120px;
+            height: 120px;
+            margin-top: 10px;
+            border: 1px solid #CCC;
+        }
+        .author-name {
+            margin: 0;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 6px;
+        }
+    }
+}
+
+
+$screen-md: 800px;
+@media (max-width: $screen-md) {
+
+    #speaker .grid-item {
+        top: 0 !important;
+        left: 0 !important;
+        position: relative !important;
+    }
+}

@@ -1,0 +1,428 @@
+$screen-xs: 425px;
+$screen-sm: 768px;
+$screen-md: 992px;
+
+/* Medium devices (tables, 425px and up) */
+@media (max-width: $screen-xs) {
+
+  /* Header */
+  #header {
+    padding: 15vh 40px 0;
+
+    .container {
+      .title {
+        .logo {
+          text-align: center;
+
+          & > img {
+            margin-right: 0;
+          }
+        }
+        .jsdc-full-name {
+          margin-top: 10px;
+          margin-left: 0;
+
+          & > span {
+            &:last-of-type {
+              font-size: 1.9rem;
+              text-align: center;
+              width: 100%;
+            }
+
+            &:not(:last-of-type) {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+      .count-down {
+        .time-content {
+          .date, .hours, .minutes, .seconds {
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            font-size: 50px;
+          }
+          .hours {
+            margin-right: 0;
+          }
+          .minutes, .seconds {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #ticket {
+    .ticket-container {
+      .ticket-info {
+        .ticket-1 {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  /* News */
+  #news{
+    padding: 80px 40px 0;
+
+    #news-wrapper{
+      padding: 40px;
+    }
+
+    #news-line{
+      &:after {
+        height: 80px;
+      }
+    }
+  }
+
+  /* About */
+  #about{
+    padding: 80px 40px 0;
+
+    #about-jsdc{
+      padding: 60px 20px;
+    }
+
+    #about-line{
+      &:after {
+        height: 80px;
+      }
+    }
+  }
+
+  /* Speaker */
+  #speaker{
+    padding: 80px 60px 0;
+
+    #speaker-line{
+      &:after {
+        height: 80px;
+      }
+    }
+  }
+
+  #volunteers{
+    padding: 80px 60px;
+  }
+
+  /* Last JSDC */
+  #last-year{
+
+    .last-content{
+      padding: 15vh 8% 0;
+    }
+  }
+
+  /* Sponsor */
+  #sponsors{
+    padding: 80px 60px;
+    .sponsor-content-area {
+      &:not(:first-of-type) {
+        margin-top: 30px;
+      }
+
+      .company-description {
+        padding: 0 5px;
+        border-radius: 0 0 10px 10px;
+        border-bottom: 2px solid #aeaeae;
+        border-left: 2px solid #aeaeae;
+        border-right: 2px solid #aeaeae;
+      }
+    }
+  }
+}
+
+/* Medium devices (tables, 768px and up) */
+@media (max-width: $screen-sm) {
+
+  #header {
+    padding: 12vh 0;
+
+    .container {
+      .title {
+        .logo {
+          text-align: center;
+
+          & > img {
+            margin-right: 0;
+          }
+        }
+        .jsdc-full-name {
+          margin-top: 10px;
+          margin-left: 0;
+
+          & > span {
+            &:last-of-type {
+              font-size: 1.9rem;
+              text-align: center;
+              margin-top: 1rem;
+              width: 100%;
+            }
+
+            &:not(:last-of-type) {
+              visibility: hidden;
+            }
+          }
+        }
+      }
+      .count-down {
+        .time-content {
+          .date, .hours, .minutes, .seconds {
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            font-size: 50px;
+          }
+          .hours {
+            // margin-right: 20;
+          }
+          .minutes, .seconds {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  #ticket {
+    .ticket-container {
+      .ticket-info {
+        .ticket-1 {
+          width: 75%;
+        }
+      }
+    }
+  }
+
+  /* News */
+  #news{
+    padding: 80px 0 0;
+
+    #news-wrapper{
+      padding: 40px 60px;
+    }
+
+    .news-container{
+      .news{
+        padding: 16px 0;
+
+        .news-title,{
+          text-align: left;
+          line-height: 1.6;
+        }
+      }
+    }
+
+    #news-line{
+      &:after {
+        height: 80px;
+      }
+    }
+  }
+
+  /* About */
+  #about{
+    padding: 80px 0 0;
+
+    #about-jsdc{
+      padding: 60px 40px;
+    }
+  }
+
+  /* Speaker */
+  #speaker{
+    padding: 80px 0 0;
+
+    .typeform-button {
+      margin: 0 20px;
+    }
+
+    #speaker-line{
+      &:after {
+        height: 80px;
+      }
+    }
+  }
+
+  #volunteers{
+    padding: 80px 0;
+  }
+
+  /* Last JSDC */
+  #last-year{
+    padding: 0;
+  }
+
+  /* Sponsor */
+  #sponsor{
+    padding: 80px 0;
+
+    .typeform-button {
+      margin: 0 20px;
+    }
+  }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: $screen-md) {
+
+  /* Header */
+  #header {
+    padding: 12vh 0;
+
+    .title{
+
+      h2 {
+        font-size: 60px;
+        padding: 0;
+      }
+
+      h5 {
+        span{
+          font-size: 24px;
+          color: white;
+        }
+      }
+    }
+
+    p {
+      margin: 30px 0 0;
+      font-size: 24px;
+      line-height: 2;
+    }
+    span{
+      font-size: 22px;
+    }
+
+    .actions {
+      margin-top: 5%;
+    }
+  }
+
+  /* News */
+  #news{
+    padding: 60px 0 0;
+
+    #news-wrapper{
+      padding: 60px 80px;
+    }
+
+    .date{
+      width: 60px;
+      height: 60px;
+      padding: 5px 0 0;
+      span{
+        display: block;
+      }
+    }
+
+    .major{
+      h2{
+        font-size: 32px;
+      }
+    }
+
+    #news-line{
+      &:after {
+        height: 120px;
+      }
+    }
+  }
+
+  /* Ticket */
+  #ticket {
+
+  }
+
+  /* About */
+  #about{
+    padding: 120px 0 0;
+
+    #about-jsdc{
+      padding: 80px 60px;
+
+      .major{
+        text-align: left;
+        h2{
+          font-size: 32px;
+        }
+      }
+    }
+
+    p{
+      font-size: 18px;
+      margin-bottom: 0;
+      padding-right: 5%;
+    }
+
+    .row + .row{
+      padding-top: 80px;
+
+      .major {
+        h2{
+          font-size: 32px;
+        }
+      }
+
+      p{
+        padding: 0 5%;
+        font-size: 20px;
+        line-height: 2.5;
+      }
+      .image{
+        margin-top: 60px;
+      }
+    }
+
+    #about-line{
+      &:after {
+        height: 120px;
+      }
+    }
+  }
+
+  /* Speaker */
+  #speaker{
+    padding: 100px 0 0;
+
+    #speaker-line{
+      &:after {
+        height: 100px;
+      }
+    }
+  }
+
+  #volunteers {
+    padding: 80px 0;
+  }
+
+  /* Last JSDC */
+  #last-year{
+    padding: 0;
+
+    .last-content{
+      padding: 15vh 8% 0;
+      .major{
+        font-size: 36px;
+      }
+      .button{
+        font-size: 20px;
+      }
+    }
+  }
+
+  /* Sponsor */
+  #sponsor{
+    padding: 80px 0;
+    .major {
+      h2{
+        font-size: 32px;
+      }
+    }
+  }
+}

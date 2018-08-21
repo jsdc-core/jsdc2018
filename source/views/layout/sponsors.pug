@@ -1,0 +1,24 @@
+extends ../partials/_layout
+
+block content
+  mixin createSponsorContent(col, data)
+    a.sponsor-content-area(class="col-md-"+col+" col-xs-12" style="text-decoration:none;"+(data.style?data.style:"") href=data.link title=data.company+(data.description?"\n\n"+data.description:"") target="_blank")
+      img.company-logo(src=data.logo)
+      if col > 2
+        .company-description
+          | #{data.description}
+
+  .container-fluid#sponsors
+    each sponsorItems, sponsorIndex in sponsors
+      if sponsorItems.length > 0
+        .row
+          .col-md-12.col-xs-12
+            h2.company-name #{tranformName[sponsorIndex].name || sponsorIndex.toUpperCase()}
+          each item, index in sponsorItems
+            +createSponsorContent(tranformName[sponsorIndex].col, item)
+
+block js
+  script.
+    setTimeout(function(){
+      document.querySelectorAll('#navbar ul li')[6].classList.add('active');
+    }, 0);

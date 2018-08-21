@@ -1,0 +1,49 @@
+extends ../partials/_layout
+
+block content
+  section#speaker
+    .container
+    if speakers.length == 0
+      h2.text-center TBD
+    else
+      .container
+        .grid.row
+          each val, index in speakers
+            .grid-item.col-md-3
+              //- if val.isKeynote
+                label.label.label-success.label-sm.is-keynote
+                  | Keynote
+              .thumbnail
+                if val.image
+                  img.img-circle(src='./images/speakers/' + val.image, width='200')
+                else
+                  img.img-circle(src='./images/jsdc-mascot-150.jpg', width='200')
+                .caption
+                  h3.text-center.author-name #{val.name}
+                  .text-center #{val.company}
+                  .text-center
+                    if val.links.blog
+                      a.btn.btn-link.btn-github.btn-sm(target='_blank' href=val.links.blog)
+                        i.fa.fa-link
+                    if val.links.github
+                      a.btn.btn-link.btn-link.btn-sm(target='_blank' href=val.links.github)
+                        i.fa.fa-github
+                    if val.links.twitter
+                      a.btn.btn-link.btn-link.btn-sm(target='_blank' href=val.links.twitter)
+                        i.fa.fa-twitter
+                    if val.links.medium
+                      a.btn.btn-link.btn-link.btn-sm(target='_blank' href=val.links.medium)
+                        i.fa.fa-medium
+                  div #{val.description}
+
+block js
+  script(src='./js/masonry.pkgd.min.js')
+  script.
+    setTimeout(function(){
+      document.querySelectorAll('#navbar ul li')[4].classList.add('active');
+      var elem = document.querySelector('.grid');
+      var msnry = new Masonry(elem, {
+        // options
+        itemSelector: '.grid-item'
+      });
+    }, 0);

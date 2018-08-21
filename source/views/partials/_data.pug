@@ -1,0 +1,742 @@
+-
+  //- name: 講者名字, description: 作者介紹, image: 照片
+  // ## option ##
+  //- company: 公司/組織
+  //- 額外連結們: github, twitter, link, linkedin
+
+  var speakers = {
+    Aaron: {
+      name: '章小飛',
+      isKeynote: true,
+      description: "章小飛是 Angular 開發團隊的 PM，扮演著傳教士的角色，在 angular.cn 社群與協助企業成功導入。是中國最早一批的Angular 開發者，也是第一位將 Angular 書籍中文化的譯者！",
+      description_E: "Aaron is Angular's developer PM in China. He is the lead for angular.cn and social channels in China, and helps developers in China's enterprise and open source communities to be successful with Angular. One of the earliest Angular developers in China since Angular 2012, he translated the first books on Angular into Chinese.",
+      image: 'aaron.png',
+      company: '自由職業者',
+      agenda: {
+        title: 'Angular核心新特性',
+        levels: ['beginner', 'intermediate'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '1、集成開發環境@angular/cli。2、Angular三大核心概念。3、Angular架構特色。4、UI庫。',
+        outline_E: ''
+      },
+      links: {
+        blog: 'http://t.cn/Ro8ZAto'
+      },
+    },
+    Yosuke: {
+      name: 'Yosuke Furukawa',
+      isKeynote: true,
+      description: 'Yosuke 領導日本 Node.js 社群同時也是 NodeFest 組織的一員，Yosuke 對 ESNext, new protocols like HTTP/2, WebRTC 和測試工具深感興趣。建立了 tower-of-babel, ES2015 教學工具，目前正進入用 React 與 Redux 開發 universal 的網站應用！',
+      description_E: 'Yosuke leads the Japan Node.js User Group and is an organizer of NodeFest. Yosuke has an interest in ESNext, new protocols like HTTP/2, WebRTC, and testing tools. He built the tower-of-babel, ES2015 tutorial tool and is now getting into universal web applications using React and Redux.',
+      image: 'y_furukawa.jpg',
+      company: 'Recruit Technologies',
+      agenda: {
+        title: 'Turbo Boost Next Node.js',
+        levels: ['intermediate'],
+        lang: 'EN',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'node.js http2 is coming in Node.js v8.x (maybe) , and TurboFan / Ignition Interpreter is also coming in Node v8.x. I would like to introduce about node http2 and turbofan!<br>1. http2 capability<br>2. how do we get the http2 benefits<br>3. Turbofan and Ignition Interpreter<br>4. performance benchmark',
+        outline_E: ''
+      },
+      links: {
+      },
+    },
+    Atian: {
+      name: '天豬',
+      isKeynote: true,
+      description: '阿里巴巴集團 - 大文娛遊戲事業群的前端負責人，EggJS 核心開發者。',
+      image: 'atian.jpg',
+      company: '阿里巴巴',
+      agenda: {
+        title: 'Egg & Node.js 從小工坊走向企業級開發',
+        levels: ['none'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'Egg 是阿里巴巴使用的 Node.js 核心基礎框架，通過「微內核 +  插件機制 + 框架定制能力」，完美達成生態共建和差異化定制的平衡點。Egg 已開源近一年，本次分享將介紹 Egg 的設計理念和特點，演示在團隊裏如何漸進式演進，希望能幫助開發者定制適合自己團隊的上層框架，走向企業級開發協作。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/atian25'
+      },
+    },
+    Shaun: {
+      name: 'Shaun Stanislaus',
+      isKeynote: true,
+      description: "Shaun Stanislaus 是 Full-stack 開發者，同時也是資訊安全顧問、講師，擁有超過 5 年的開發經驗，擅長 Ruby on Rails 、 Node.js 和 Django ，主要負責處理亞太和美洲兩地區的公司、 NGO 與政府機關。",
+      description_E: "Shaun Stanislaus is a fullstack developer as well as an IT Security consultant and public speaker in the area of Ruby on Rails, Nodejs and Django Framework for over 5 years, providing services & solutions to MNCs, NGOs, government-linked organizations and enterprises in the Asia Pacific and Americas regions.",
+      image: 'shaun.jpg',
+      company: 'Augmify Pte. Ltd.',
+      agenda: {
+        title: 'Building an API for marketplace Mashape',
+        levels: ['beginner'],
+        lang: 'EN',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'Building scalable middleware for Whole-of-Government data sharing from sensors in the form of a real-time Sensor Data Exchange, which will incorporate data from public and private sector sensor through the API. This will help reap operational efficiencies in urban planning e.g. for crowd control in public areas, flood monitoring, vehicle congestions.',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/shaunstanislaus',
+        medium: 'https://medium.com/@shaunstanislaus',
+      },
+    },
+    Folio: {
+      name: 'Folio',
+      isKeynote: false,
+      description: '元配是 JavaScript、真愛是 Rust、小三是 Vim、前任是 PHP、在追求 Erlang、跟 Python 曖昧、天菜是 Front-End Engineering。',
+      image: 'folio.jpg',
+      company: 'Exosite',
+      agenda: {
+        title: 'jscodeshift: Refactor JS w/ JS',
+        levels: ['intermediate'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '你是否曾想過，“要是可以自動重構類似的程式碼就好了”、“唉，現在才知道怎麼寫已經太慢了，寫下的程式碼就這樣吧”、“我的 npm package 已經有很多人在用了，現在如果要大改函式庫介面的話，我的使用者該怎麼升級啊”。有以上這些症狀的朋友們，歡迎來到 jscodeshift 的世界，讓我們看看 jscodeshift 要怎麼幫你實現你內心深處最最渴望的夢想。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/sharils'
+      }
+    },
+    Kuro: {
+      name: 'Kuro Hsu',
+      isKeynote: false,
+      description: '前端工程師，長期專注網頁前端標準技術。曾任 JSDC、WebConf、COSCUP 等研討會講者，也多次參與前端技術社群分享心得。',
+      image: 'kuroHsu.jpg',
+      agenda: {
+        title: '從 VueJS 看前端生態圈的發展變化',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '近年來前端工具的演進變化快速，這場分享將由 VueJS 出發，除了針對 VueJS 新特性的介紹外，也簡單分析現代前端框架與前端開發生態圈的變化與演進。如 Web component 的崛起、 MV* 框架資料的偵測機制與同步、CSS 的管理、前端語言的預編譯、優化等特性。也希望透過這樣概觀性的介紹，能讓初入前端領域的朋友更快上手，不會感到迷惘。',
+        outline_E: ''
+      },
+      links: {
+        blog: 'https://kuro.tw/'
+      }
+    },
+    Michael: {
+      name: 'Michael Cheng',
+      isKeynote: false,
+      description: 'Michael 是一位 Google 軟體工程師，擅長使用 Angular 與 TypeScript 進行網站開發。工作之外的他，對網站技術、鋼琴、音樂充滿熱情。',
+      description_E: 'Michael is a software engineer at Google. He develops for the web using Angular and TypeScript. Outside of work, he is passionate about web technologies, the piano, and music.',
+      image: 'michael.jpg',
+      company: 'Google',
+      agenda: {
+        title: 'Data binding in vanilla JavaScript',
+        levels: ['intermediate'],
+        lang: 'EN',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'Intro/motivation/use cases, object basics, creating a data binding library, uses in real web apps',
+        outline_E: ''
+      },
+      links: {
+        blog: 'https://www.michaelcheng.us',
+        github: 'https://github.com/mlcheng'
+      }
+    },
+    SimonSun: {
+      name: 'Simon Sun',
+      isKeynote: false,
+      description: '程式中一個迷途小書僮。',
+      image: 'simonsun.jpg',
+      // company: '',
+      agenda: {
+        title: '屁話一籮筐，想聽的人就過來。',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '最近在完成了一個滿大的 Node.js API 專案，有不少開發心得與新的經驗，想用輕鬆一點的模式來分享經驗給各位，當然裡面充滿著個人情感與血淚回憶。',
+        outline_E: ''
+      },
+      links: {
+        medium: 'https://medium.com/@simonsun1988'
+      }
+    },
+    PonPon: {
+      name: '彭彭',
+      isKeynote: false,
+      description: '喜歡技術、更熱愛與人互動。若技術不能轉換成大家都能上手把玩的東西，那有什麼意思呢？耕耘網頁領域超過十五年，全力挖掘 Web 的潛力，特別是JavaScript實作重量級應用的可能性和營利模式。Piconion 主要開發者，擔任前端工程講師超過十年，曾任 COSCUP、Modern Web 講者。',
+      image: 'ponpon.png',
+      company: 'Senior Freelancer',
+      agenda: {
+        title: '如何在網頁上開發大型雲端應用程式',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'Piconion 是一個完全以 JavaScript 打造的專業線上影像處理軟體。提供影像濾鏡、繪圖工具、圖層架構、路徑編輯等等關鍵功能；整合 Google Drive，提供完善的雲端應用體驗；同時擁有如桌面應用般的流暢操作介面。這一切，都依賴最新的 Web 技術來達成！我將在這次的演講中，分享 Piconion 如何吸收、應用核心的 Web 技術，如何在快速變動的大環境中，不斷的精進、改善軟體的功能，並持續保持乾淨俐落的程式架構。',
+        outline_E: 'Have you ever think it\'s possible to port Photoshop to web platform, the cloud? It\'s undergoing! Piconion is one of many popular online photo editors, integrated with Google Drive and applied a lot of latest web technologies: Web Worker, Canvas, SVG, WebGL, Web Storage and many more. I will share my past 3-years experience of developing Piconion, a professional web app for enterprise.'
+      },
+      links: {
+        blog: 'http://training.pada-x.com/'
+      }
+    },
+    Kevin: {
+      name: '小莊',
+      isKeynote: false,
+      description: '本職是兩個孩子的爸爸，目前在數位廣告研發團隊的工程師。一直對台灣的資訊產業寄予厚望，戮力於提升台灣資訊界的就業環境。',
+      image: 'kevinzhuang.png',
+      company: 'funP雲沛創新集團, TenMax騰學廣告科技',
+      agenda: {
+        title: '前端開發者介紹廣告科技生態 ㄧ',
+        title2: '從追蹤，分析，到投遞',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '在台灣軟體圈耕耘許久，以開發者的身分進入到數位廣告的集團，發現這個生態圈相當具有活力，而且面臨的技術問題也都相當有挑戰。本次講題以開發者的角度切入介紹何謂數位廣告，解釋ㄧ些大眾對於數位廣告的迷思，跟目前遇到的困境，希望能引領各位開發者以不同的觀點看待數位廣告這個生態圈。',
+        outline_E: ''
+      },
+      links: {
+        blog: 'http://www.kvzhuang.net/'
+      }
+    },
+    Jerry: {
+      name: 'Jerry Hong',
+      isKeynote: false,
+      description: '現任 Appier 前端工程師，目前專注在追蹤使用者以及各種網頁的 hack 手法。平常熱愛專研前端技術與函數式編程，曾獲 2017 第 8 屆iT邦幫忙鐵人賽冠軍。',
+      image: 'jerryhong.jpg',
+      company: 'Appier',
+      agenda: {
+        title: 'RxJS - 封裝程式的藝術',
+        levels: ['intermediate', 'advanced'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '這幾年來 JavaScript 有越來越多的語法糖(syntax sugar)像是 async/await, generator 等等，但我們實際上在處理非同步行為時，仍然要透過各種不同的方式；這使我們必須學習越來越多的語法，但程式碼卻更加難以閱讀。本次演講將會說明 RxJS 如何使用相同的方式處理各種非同步行為，以及我們要如何運用 Functional Programming 的觀念把複雜的非同步行為封裝成簡單可讀的程式碼',
+        outline_E: ''
+      },
+      links: {
+      }
+    },
+    Yuren: {
+      name: 'Yuren Ju (小朱)',
+      isKeynote: false,
+      description: '旅行、咖啡、科技宅。喜歡吸收新知跟挽起袖子動手做與跟別人分享這些經驗。也是台灣開放源碼社群的長工，曾經擔任 COSCUP 的紀錄組長以及議程組長。',
+      image: 'yuren.jpg',
+      company: 'g0v 零時政府',
+      agenda: {
+        title: '如何用 JavaScript 打造向量繪圖軟體',
+        levels: ['intermediate'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '向量繪圖軟體在桌面應用已經是個相當成熟的應用，但可以在瀏覽器上運作的卻是相對少數。本演講從用 JavaScript 實做一個簡易的向量繪圖編輯器為出發點，帶領大家瞭解如何建構一個向量繪圖軟體。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/yurenju'
+      }
+    },
+    Tony: {
+      name: 'Tony Pai',
+      isKeynote: false,
+      description: '如同追逐白兔掉進兔子洞的愛麗絲般，是個喜歡追逐技術掉進坑的開發者。',
+      image: 'tonypai.png',
+      company: '一起資訊 發燒網',
+      agenda: {
+        title: '前端也能做的 DevOps',
+        levels: ['intermediate', 'advanced'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '在 JSDC 講 DevOps 是不是搞錯了什麼？其實，DevOps 並不是只有後端或維運人員能做，因為產品是需要所有人配合才能更快速且兼具品質的上線。來看看講者是如何在前端開發中引入 DevOps 以加速開發流程的吧！（其實是增加工作量... 喂',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/tpai'
+      }
+    },
+    Jhen: {
+      name: 'Jhen',
+      isKeynote: false,
+      description: '休學中，目前剛成為 MyBigDay 的 Lead engineer，使用 React / React Native / Node.js 開發服務，目前著迷於 GraphQL。同時也是 redux-devtools-extension 的核心貢獻者之一。',
+      image: 'jhen.jpeg',
+      company: '感覺不錯 (MyBigDay我的大日子)',
+      agenda: {
+        title: 'Improve debugging experience on React Native',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'react-native-debugger 是一個主要整合 React Native 內建的 remote debugger 與 redux-devtools-extension 以及 react-devtools，並基於 Electron 的優勢提供更好的功能及細節改善的開發工具，最終目標是在 React Native 中打造出與 React DOM 相同的開發體驗。在這次會分享：* 開發歷程與核心介紹* Features 以及 Debugging 技巧* 這些開發工具是如何整合的？它們如何運作？* 正在進行開發的 Features 以及未來展望* 常見問題與解決方法',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/jhen0409',
+        twitter: 'https://twitter.com/jhen_jie'
+      }
+    },
+    SimonSu: {
+      name: 'Simon Su',
+      isKeynote: false,
+      description: '現任GCPUG.TW Co-organizer, 也是台灣地區Google Cloud Trainer, 並得到Cloud GDE之榮耀',
+      image: 'simonsu.png',
+      company: 'Hiiir',
+      agenda: {
+        title: '使用Google Cloud從雲到端，動手刻個IoT',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '透過Google Cloud提供的各項服務與工具，讓我們體驗一下使用node.js快速設計、佈建一個IoT服務，讓我們開始IoT吧！',
+        outline_E: ''
+      },
+      links: {
+        blog: 'http://about.me/peihsinsu'
+      }
+    },
+    WM: {
+      name: 'WM',
+      isKeynote: false,
+      description: '待在電商產業的前端工程師，常出沒於 MozTW 與 f2eTW 以及 React 社群',
+      image: 'wm.png',
+      company: '誠實小蜜蜂',
+      agenda: {
+        title: 'Fetch Web Streams',
+        levels: ['intermediate'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'Stream 這個資料抽象界面在 Nodejs 中已經為人熟知，現在 WHATWG 也制定了 Streams Spec，在瀏覽器端提供更多有趣的應用。',
+        outline_E: ''
+      },
+      links: {
+        blog: 'https://kidwm.net'
+      }
+    },
+    Ben: {
+      name: 'Ben Jian',
+      isKeynote: false,
+      description: '在軟體開發的世界裡，我喜愛它帶給我不停前進的學習動力，選擇它是我一生最正確的決定。現為全端工程師。',
+      image: 'ben.jpg',
+      // company: '廣達電腦',
+      agenda: {
+        title: 'Mastering Bitcoin by Node.js',
+        levels: ['none'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '比特幣(Bitcoin)是近年火熱的話題，其背後的區塊鏈(Blockchain)技術更是在各應用領域被頻繁地討論，然而當中的實作細節卻鮮少有人分享。為深入瞭解Bitcoin/Blockchain的運作原理，唯有自己走過一遍實作才可窺其堂奧，在本議程中，我將提要Bitcoin/Blockchain開發所需要的知識、技術和工具，用Node.js程式碼來示範，以期盼更多開發者加入研究的行列。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/benzwjian',
+        medium: 'https://medium.com/@benzwjian'
+      }
+    },
+    Rplus: {
+      name: 'Rplus Chen',
+      isKeynote: false,
+      description: '♻ 習慣用分享文章來做筆記的前端開發者。f2etw 的龍套君。近來喜歡辦小活動揪團出門寫 ♥ CSS ♥',
+      image: 'rplus.png',
+      agenda: {
+        title: '變數握手，CSS、JS 樂無窮',
+        levels: ['intermediate'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '今年春天微軟的 Edge 瀏覽器也開始支援 CSS Custom property 了。就來看看這新鮮玩意可以蹦出什麼火花，又會有何種有趣的應用方式呢',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/Rplus/',
+        twitter: 'https://twitter.com/RplusTW'
+      }
+    },
+    AarOn: {
+      name: 'AarOn',
+      isKeynote: false,
+      company: 'Taroko Software',
+      description: '熱血前端攻城屍，曾在 CodePen 發表過一拖拉庫著名的華麗作品，現擔任兩個 Team 的工友，順便掛上 Frontend Tech Lead 的傢伙。曾客串ModernWeb 2017講師、高雄前端開發者大會講師、中原大學CSS Workshop講師，深信 JavaScript 會一統天下的偏執男子。',
+      image: 'aaron_tw.jpg',
+      agenda: {
+        title: '擊殺！前端測試Boss全攻略！',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '在寫前端測試時，是否發覺 UI 測試很繁瑣？是否發覺非同步測試很複雜？是否發覺衝測試覆蓋率有時候很浪費生命？曾經遇到不知如何測試的程式碼？曾經因此而感到厭世？前端測試是否曾經把你弄得嫑嫑的？<br>本議程以 React + Redux 為例，將分享寫測試時常常面臨的挑戰，並介紹當今熱門的測試框架 Jest 如何以優雅的姿態一一擊破這些問題，從如何寫出簡潔易讀的測試碼、如何 Mock 函式或元件、如何測試 Lifecycle Methods、如何測試有Timer (setTimeout) 的程式、如何處理程式裡的隨機值或 Timestamp、如何測試 Called function 所被帶入的參數、如何使用 Snapshot 節省 UI 測試的成本...等各種議題。<br>最後會進一步分享 Jest 強大的測試覆蓋率輔助工具，並探討測試覆蓋率的效益指標。加碼介紹如何使用 Snapshot serializer 優化測試工作。<br>讓前端工程師快樂寫測試、輕鬆下班享受生活！',
+        outline_E: ''
+      },
+      links: {
+        blog: 'https://codepen.io/aaronchuo/',
+      }
+    },
+    Will: {
+      name: 'Will 保哥',
+      isKeynote: false,
+      company: '多奇數位創意有限公司',
+      description: '現任多奇數位創意有限公司技術總監，連續 10 度當選微軟最有價值專家(MVP) ，熟悉各式 Web 前後端開發技術，出版著作有 ASP.NET MVC 2 開發實戰、Windows Phone 開發實戰、ASP.NET MVC 4 開發實戰等書籍。曾獲選2013第6屆iT邦幫忙鐵人賽年度大獎。',
+      image: 'will.jpg',
+      agenda: {
+        title: 'Angular 5 全新功能探索',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '前端框架有如洪水一般滾滾而來，每套框架無不使出全力，不斷進化。當然 Angular 也不惶多讓，今年 10 月 Angular 即將推出全新 v5.0 版本，在新的版本中將帶來更多另人振奮的消息，本次演說將鉅細靡遺帶來 Angular 5 各種全新特性與效能改進，體驗完整的 SPA 網站開發體驗。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/doggy8088/',
+        twitter: 'https://twitter.com/Will_Huang'
+      }
+    },
+    Anna: {
+      name: 'Anna Su',
+      isKeynote: false,
+      company: 'PIXNET',
+      description: '喜歡做網站的前端工程師，面對各種可能、持續接受挑戰，試著找到更有趣的部分！朝著幸福又快樂的日子一直努力下去。',
+      image: 'anna_face.jpg',
+      agenda: {
+        title: 'Why Redux-Observable ?',
+        levels: ['intermediate'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'Redux 提供了很好的狀態管理，把所有"修改狀態的 Side Effect" 透過不同的 Action Type 來區分，使我們可以很清楚追蹤狀態的變化歷程；但修改狀態以外的 Side Effect 一直存在著各種不同 Middleware 的解法，像是 Redux-thunk, Redux-promise 和 Redux-saga ... 等。本次分享將會說明 Redux-Observable 如何解決各種 side-effect 難題，以及為什麼我選擇 Redux-Observable。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/annasu/',
+        twitter: 'https://twitter.com/newstory0113'
+      }
+    },
+    Sherlock: {
+      name: 'Sherlock Kuo',
+      isKeynote: false,
+      company: 'GoAnimate',
+      description: '包山包海工具人型工程師，曾參與數款成功應用的誕生。目前在GoAnimate擔任Dev Manager，持續學習虛心、求變以及不怕失敗的精神，為打造下一代的線上動畫創作平台努力。',
+      image: 'sherlock.png',
+      agenda: {
+        title: 'Node.js for Content Generation and Fast Delivery',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'In this session, we will examine how Node.js can be used to generate content (video in our case) and deliver it to the web clients in almost real-time.',
+        outline_E: ''
+      },
+      links: {
+      }
+    },
+    Zet: {
+      name: 'Zet',
+      isKeynote: false,
+      company: '國立中央大學',
+      description: '熱衷於前端領域技術的資工所學生，目前在 EXMA-Square 擔任實習前端工程師。經常參與社群活動與技術交流分享，是 React 生態圈的忠實開發者。',
+      image: 'zet.jpeg',
+      agenda: {
+        title: 'Ultra Simple Isomorphic with Next.js',
+        levels: ['intermediate', 'advanced'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'Isomorphic，或是有人進一步稱之為 Universal，對於 React 開發者來說一直都是一件大家都想嘗試但卻異常困難的事，然而 Next.js 的到來讓這一切都變的輕巧容易。本次講題希望透過介紹 Next.js 這套框架，來讓大家以極簡單的方式建構出強大的 Isomorphic React App，並解析其中的優勢以及分享相關的實際開發經驗。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/tz5514/',
+      }
+    },
+    CT: {
+      name: 'CT',
+      isKeynote: false,
+      company: 'Appier',
+      description: '喜歡雪板、精釀啤酒和函數式編程。',
+      image: 'CT.jpg',
+      agenda: {
+        title: 'The Way to Fantasyland',
+        levels: ['intermediate', 'advanced'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '函數式編程（Functional Programming）的技巧在 JavaScript 發展已有段時間： NodeJS 的 callback style、Array 的 map 和 reduce、Promise、Observable、以及 React 等都有函數式編程的觀念在其中。但函數式編成中還有另一更好用的工具：代數資料類型（Algebraic Data Type），它讓我們能用更抽象的語言描述程式，從複雜的邏輯中抽出共用的部分，精練程式碼。Fantasy Land Specification 定義了在函數式編程中常見的各種代數（Algebra），例如 Functor、Applicative、Monad，讓我們用 JavaScript 也能享受函數式編程的美好。',
+        outline_E: ''
+      },
+      links: {
+        blog: 'https://blog.wuct.me/',
+        github: 'https://github.com/wuct/',
+        twitter: 'https://twitter.com/wu_ct'
+      }
+    },
+    SeanLiu: {
+      name: 'Sean Liu',
+      isKeynote: false,
+      company: '悠邁股份有限公司 & 優愛德（urAD）& Deus',
+      description: 'Sean Liu，因為喜歡自幹產品，所以目前是三家分屬不同領域網路公司的創辦人，天生的技術宅與後天的創業魂，JSDC創辦人之一，也是Facebook Developer Circle臺北的社群Leader之一，Web的忠實擁護者，願景是希望能建立一家來自台灣的世界級軟體公司，仍在為過不完的坎奮戰著。',
+      image: 'seanLiu.jpeg',
+      agenda: {
+        title: '原生應用與Web共榮的新時代',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '當原生與H5誰勝誰輸的爭鬥逐漸雖著時間逝去，我們即將迎來一個全新的局面，隨著各項Web規範的成熟，在Mobile與其他載體上，Web逐漸取得更多的話語權了，但卻不是我們曾經所想的那樣零和遊戲般的消長，原生應用與Web逐漸以一種全新的共生型態出現在我們眼前，我將會帶領各位重新的看一下這段發展，並分享我所看到的下一代Web，那寄居於超級原生應用上的Web生態。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/tz5514/',
+      }
+    },
+    wwwy3y3: {
+      name: 'wwwy3y3',
+      isKeynote: false,
+      company: 'Canner.io 易開科技',
+      description: 'Canner.io 易開科技共同創辦人，曾參與用數據看台灣，React-D3, Datagarage 等專案，從大學開始不斷鑽研 NodeJS web development， 前端從 jQuery, backbone 學到 React，後端框架從 Express 到 Koa，最近大量使用 Typescript 作為大型專案開發的語言',
+      image: 'wwwy3y3.jpeg',
+      agenda: {
+        title: 'React Server-side Render Nightmare Gone',
+        levels: ['intermediate', 'advanced'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'React Server-side Render (SSR) 一直是麻煩的問題，像是推陳出新的第三方套件支援問題，後端除了 NodeJS 無法使用 SSR，伺服器上使用 SSR 也可能成為瓶頸，另外，現存的解決方案也需要花費不少時間導入，於是，我們團隊開發了 Coren ，在 offline 完成 SSR，在伺服器上不必再面對 React SSR 的種種問題，不但支援多種後端程式語言，也大幅提升在伺服器上的效率．',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/wwwy3y3/',
+      }
+    },
+    Fred: {
+      name: 'Fred Chien',
+      isKeynote: false,
+      // company: '',
+      description: '一個無良創業者及 Open Source 開發者，LXDE 桌面環境的核心開發者，也是黑客松台灣創辦人，喜愛分享自己的各種開發成果和心得。曾接觸過許多技術領域，包括 Linux 核心、系統開發、驅動程式、嵌入式系統、桌面應用程式及 Web 系統等。',
+      image: 'fred.jpg',
+      agenda: {
+        title: '你才區塊鏈，你全家都區塊鏈',
+        levels: ['beginner'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: '區塊鍊（Blockchain）是門近來很紅的技術，在實際應用上結合了許多密碼學、演算法、P2P 網路通訊等諸多技術，才讓很多人感覺霧裡看花。但事實上區塊鍊並非這麼神秘又遙不可及，只要有心，人人都可以簡單地用幾行程式，輕易的土炮一條自己的無用區塊鍊。',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/cfsghost',
+        blog: 'http://fred-zone.blogspot.tw/'
+      }
+    },
+    KevinHu: {
+      name: 'Kevin Hu',
+      isKeynote: false,
+      company: 'iStaging 數位宅妝',
+      description: '歡笑與隨和是我的生活法則， 做什麼像什麼是我的人生目標。熱於分享與永於止盡的學習，教學相長才能知道自己是否真的了解。「Do the right thing, not just do the thing right!」專職於前端，目前使用vue做為主要開發。',
+      image: 'kevinhu.jpeg',
+      agenda: {
+        title: '使用 Vue 結合 A-Frame 進入 360 panorama VR 的世界',
+        levels: ['beginner', 'intermediate'],
+        lang: 'CH',
+        type: '',
+        youtube: '',
+        slide: '',
+        outline: 'VR 的應用已經越來越廣泛於生活中, web 領域當然也不弱人後，今天我們主要分成兩個部分，第一個部分著重在panorama 也就是全景圖的應用當中，開發這樣的VR application要注意哪些事情？第二個部分則直接使用 Vue 結合 aframe 從頭開始實做，讓你我都能輕易進入VR的世界！（第二部分需對 Vue 有初步的了解）',
+        outline_E: ''
+      },
+      links: {
+        github: 'https://github.com/sky790312'
+      }
+    },
+  };
+
+  var agendaLevel = {
+    none: '不拘',
+    beginner: '初階',
+    intermediate: '中階',
+    advanced: '高階'
+  };
+  var languages = {
+    CH: '中',
+    EN: '英'
+  };
+
+  var agenda = {
+    '11/04(六)': [
+      {time: '08:30 ~ 09:00', list: {
+        all: {name: '會眾報到', speaker: ''},
+      }},
+      {time: '09:00 ~ 09:10', list: {
+        all: {name: '大會開場', speaker: ''},
+      }},
+      {time: '09:10 ~ 10:00', list: {
+        101: {name: '', speaker: 'Yosuke'},
+        201: {name: '', speaker: 'Will'},
+      }},
+      {time: '10:00 ~ 10:30', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '10:30 ~ 11:10', list: {
+        101: {name: '', speaker: 'Kevin'},
+        201: {name: '', speaker: 'WM'},
+      }},
+      {time: '11:10 ~ 11:30', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '11:30 ~ 12:10', list: {
+        101: {name: '', speaker: 'Tony'},
+        201: {name: '', speaker: 'Yuren'},
+      }},
+      {time: '12:10 ~ 13:10', list: {
+        all: {name: '午餐', speaker: ''},
+      }},
+      {time: '13:10 ~ 14:00', list: {
+        101: {name: '', speaker: 'Shaun'},
+        201: {name: '', speaker: 'Zet'},
+      }},
+      {time: '14:00 ~ 14:15', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '14:15 ~ 14:55', list: {
+        101: {name: '', speaker: 'SeanLiu'},
+        201: {name: '', speaker: 'Jerry'},
+      }},
+      {time: '14:55 ~ 15:10', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '15:10 ~ 15:50', list: {
+        101: {name: '', speaker: 'Michael'},
+        201: {name: '', speaker: 'Anna'},
+      }},
+      {time: '15:50 ~ 16:30', list: {
+        all: {name: '下午茶', speaker: ''},
+      }},
+      {time: '16:30 ~ 17:10', list: {
+        101: {name: '', speaker: 'wwwy3y3'},
+        201: {name: '', speaker: 'SimonSu' },
+      }},
+      {time: '17:10 ~ 17:25', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '17:25 ~ 18:05', list: {
+        101: {name: '', speaker: 'Jhen'},
+        201: {name: '', speaker: 'KevinHu'},
+      }},
+      {time: '18:05 ~ 19:00', list: {
+        all: {name: '散場', speaker: ''},
+      }},
+    ],
+    '11/05(日)': [
+      {time: '08:30 ~ 08:50', list: {
+        all: {name: '會眾進場', speaker: ''},
+      }},
+      {time: '08:50 ~ 09:00', list: {
+        all: {name: '大會開場', speaker: ''},
+      }},
+      {time: '09:00 ~ 09:50', list: {
+        101: {name: '', speaker: 'Atian'},
+        201: {name: '', speaker: 'Ben'},
+      }},
+      {time: '09:50 ~ 10:20', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '10:20 ~ 11:00', list: {
+        101: {name: '', speaker: 'Rplus'},
+        201: {name: '', speaker: 'Sherlock'},
+      }},
+      {time: '11:00 ~ 11:20', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '11:20 ~ 12:00', list: {
+        101: {name: '', speaker: 'Folio'},
+        201: {name: '', speaker: 'PonPon'},
+      }},
+      {time: '12:00 ~ 13:00', list: {
+        all: {name: '午餐', speaker: ''},
+      }},
+      {time: '13:00 ~ 13:50', list: {
+        101: {name: '', speaker: 'Aaron'},
+        201: {name: '', speaker: 'CT'},
+      }},
+      {time: '13:50 ~ 14:05', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '14:05 ~ 14:45', list: {
+        101: {name: '', speaker: 'AarOn'},
+        201: {name: '', speaker: 'SimonSun'},
+      }},
+      {time: '14:45 ~ 15:25', list: {
+        all: {name: '下午茶', speaker: ''},
+      }},
+      {time: '15:25 ~ 16:05', list: {
+        101: {name: '', speaker: 'Kuro'},
+        201: {name: '', speaker: 'Fred'},
+      }},
+      {time: '16:05 ~ 16:20', list: {
+        all: {name: '休息', speaker: ''},
+      }},
+      {time: '16:20 ~ 17:00', list: {
+        all: {name: 'Lighting Talk', speaker: ''},
+      }},
+      {time: '17:00 ~ 17:30', list: {
+        all: {name: '散場', speaker: ''},
+      }},
+    ]
+  };
+
+  var sponsors = {
+    'titanium': [
+
+    ],
+    'platinum': [
+      {company: '一零四資訊科技股份有限公司', logo: './images/sponsors/104.png', description: '104人力銀行成立於1996年，2006年以「一零四資訊科技股份有限公司」於台灣證券交易所掛牌，成為台灣第一家上市的網路公司，穩居台灣流量最多的人力資源服務網站，2007年進入大陸市場，持續以成為華人地區人力資源領導品牌為使命。職涯使命，期待壯有所用，對求職者「不只找工作，幫你找方向」，對企業「不只找人才，為你管理人才」；銀髮使命，期待老有所終，發揮健康長者的價值，照顧失能長者的尊嚴；孩子使命，期待幼有所長，幫每一個孩子找到天份。全集團追求產業創新，以C.M.O.S.四大核心概念（cloud雲端、mobile行動、open開放、social社群）提供多元職涯服務及人才管理解決方案，包括網路求職、職涯社群、職涯競爭力、高階獵才、企業大師、人資管理系統、測驗評量、人資顧問諮詢等，2014年成立社會企業處，提供夢想搖籃、工作世界、兒童美術館等社會創新服務，2015年成立銀髮事業處建構中高齡照護資源平台，完善企業社會責任。如需進一步資料，請上104企業網站：corp.104.com.tw。', link: "https://corp.104.com.tw/"},
+    ],
+    'gold': [
+      {company: '狄卡科技股份有限公司', logo: './images/sponsors/dcard.png', description: 'Dcard 是一支致力於讓分享更自由，讓資訊流動更美好的國際團隊。我們提供的社群服務，擁有每個月超越八百萬的不重複訪客，與雙位數的月成長曲線。在學生族群有極高的滲透率，以及超越 Line、Facebook 的黏著時間；在各大媒體有高量的曝光和影響力。\n\nDcard 於 2011 年由台灣大學學生打造。起初只有抽卡的功能，讓各校生在午夜 12 點抽卡配對；後來加入論壇功能，讓使用者能以全匿名的方式在平台上面討論各種話題，至今演變成擁有百萬量級註冊用戶的社群平台。\n\n我們的團隊雖然年輕，但深藏不漏，有 Github 上一萬八千顆星的大大、國家樂廳常駐二胡大師、還有體重調節師！我們希望創造一個好玩有趣，充滿實驗精神的工作環境，每個角落也永遠有新奇的事在發生。未來我們希望持續為這個社會創造價值及可能性，或許是讓每個人都有話語影響力，亦或是讓每個人能自在的交友，甚至是許多許多現在無法想像的可能性。', link: "https://www.dcard.tw"},
+      {company: '趨勢科技股份有限公司', logo: './images/sponsors/trend_micro.png', description: '你認識趨勢科技嗎? 你認識的趨勢科技是什麼樣貌? 趨勢科技有什麼過人之處，讓FBI自動找上門？讓世界最大跨國警察組織-國際刑警組織(Interpol)搶著跟它合作？ 讓全球50大企業中的48家企業都成為它的忠實客戶? 還讓國內外知名大學拿它當課堂研究案例?現在就來探索你所不知道的趨勢科技：https://careers.trendmicro.tw/ \n\n趨勢科技小檔案：\n\n趨勢科技是全球雲端資安領航者，是亞洲與台灣最大的純軟體公司，致力於實現更安全的數位世界。企業版圖橫跨全球五大洲，全球研發基地在台灣。趨勢科技在台灣的全球研發組織完整且多元，共有超過1,000位以上的工程師，負責研發全球超過3千萬名企業、家庭與個人用戶使用的最新及最完整的資訊安全核心技術及產品。另外，趨勢科技在全球的專利申請數上看數百個，其中1/3以上是由台灣同仁提出，顯示台灣研發團隊不僅技術功力深厚，創新動能亦強！', link: "http://www.trendmicro.tw/"},
+      {company: '香港商高創動訊有限公司', logo: './images/sponsors/goanimate.png', description: 'GoAnimate 是一個網上動畫視頻製作平台。我們的使命是希望能讓世界各地的企業，學校和一般人都可以又容易又快速地製作出專業的動畫視頻。\n\n我們的網上平台擁有超過850萬個用戶，商業及個人客戶透過做出高成效,具衝擊力的動畫視頻, 滿足他們各種信息傳播的需要。現今經已有超過2200萬條動畫視頻是使用我們技術製作的。', link: "https://goanimate.com/"},
+    ],
+    'silver': [
+      {company: '電子豹', logo: './images/sponsors/news_leopard.svg', description: '電子豹是台灣最大的電子報發報平台，成功協助超過 10,000 間國內外企業、知名電商、國際協會等組織解決開信率低落的問題。我們致力於整合世界級先進技術，打造一個不需技術人員，也能輕鬆使用的電子報發送平台，協助企業「在對的時間，將對的內容，寄給對的人」！我們定期觀察並分析收件者的行為，透過後台醫師式主動診斷系統，提高電子報到達率、開信率進而提升會員的回購率及品牌忠誠度。電子豹不只是最佳發送平台，更是優化企業級電子報開信率的專家。', link: "http://www.newsleopard.com/"},
+    ],
+    'special': [
+      // {company: 'EXMA-Square', logo: './images/sponsors/exma-square.png', description: '', link: "http://picklete.com/"},
+      {company: 'Pinkoi', logo: './images/sponsors/pinkoi.png', description: 'Pinkoi 是亞洲領先的設計商品購物網站，擁有眾多海內外優質設計師群，堅持用好品味、客製化的獨特設計，實現每個人的美感生活，也讓每個送禮時刻更加獨一無二。\n\n2011 年 8 月成立至今，致力於經營台灣、日本、泰國、中港澳、美加及其他國際市場，期望讓亞洲迷人的好設計在全世界散發光芒，並創造一個讓生活更美好的設計生態圈。', style: "height:189px;line-height:189px;", link: "https://www.pinkoi.com/"},
+      {company: 'Carousell', logo: './images/sponsors/carousell.png', description: 'Carousell 旋轉拍賣為社群拍賣平台，2012 年在新加坡上線後，已拓展至台灣、香港、印尼、馬來西亞、菲律賓、澳洲等國家。現有超過 6,500 萬件刊登商品，為全球成長最快及最大的行動拍賣平台之一，在新加坡、台灣與香港均於手機購物應用程式排名中名列前茅。', style: "height:189px;line-height:189px;", link: "https://tw.carousell.com/"},
+      // {company: 'KKTIX活動報名售票平台', logo: './images/sponsors/kktix.png', description: '', style: "height:189px;line-height:189px;"},
+    ]
+  };
+  var tranformName = {
+    'titanium': {name: '鑽石級', col: 12},
+    'platinum': {name: '鉑金級', col: 6},
+    'gold': {name: '金級', col: 4},
+    'silver': {name: '銀級', col: 3},
+    'special': {name: '特別感謝', col: 2},
+  };

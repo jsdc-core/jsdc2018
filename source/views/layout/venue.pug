@@ -1,0 +1,40 @@
+extends ../partials/_layout
+
+block content
+  section#venue
+    .row
+      .col-md-12(style="text-align:center;")
+        h1 國立臺灣大學社會科學院
+    .row
+      .col-md-12
+        h3 自行開車前往
+        p
+          | 臺大社會科學院大樓位於臺大校總區北門（辛亥路與復興南路交叉口的西南角）的西側，靠近法律系霖澤館。停車場位於本院大樓地下室 B1和 B2（建議停 B2，停車位多而方便），入口請
+          ol
+            li 由復興南路往南穿過辛亥路進入臺大北門，再右轉進入停車場。
+            li 由辛亥路往東行駛，在復興南路口右轉進入台大北門，50 公尺後再右轉進入停車場。
+    .row
+      .col-md-12
+        h3 捷運路線
+        ol
+          li 捷運科技大樓站 （文湖線）：捷運科技大樓站出口左轉，沿著復興南路步行至辛亥路交叉口，過馬路即可抵達臺大北門，右手邊大樓即為社會科學院，步行路程約 10 分鐘。捷運科技大樓站設有 Ubike 站點，可騎乘 Ubike 至臺大社科院。
+          li 捷運公館站（新店線）：捷運公館站，沿著羅斯福路步行進入臺大校園，循椰林大道直行，往社科院大樓方向，步行約 30 分鐘。捷運公館站設有 Ubike，可騎乘 Ubike 至臺大社科院。
+    .row
+      .col-md-12
+        h3 公車路線
+        ol
+          li 青年活動中心站(辛亥路上)：237 / 295 / 298
+          li 台大資訊大樓站(辛亥路上)：298 / 捷運公館線
+          li 大安健康服務中心(復興南路上) ：237/ 295
+          li 台大公館醫院(基隆路上) ：1 / 207 / 275 / 275 副 / 650 / 672 / 673 / 905 / 905 副 / 906 / 906 副 / 907 / 907 區 / 909 / 1032 / 1550 / 1551 / 5350
+          li 捷運公館站(羅斯福路上) ：1 / 109 / 207 / 208 / 672 / 673 / 907 / 1505 / 捷運公館線 / 敦化幹線 / 棕 12 / 綠 11
+    .row
+      .col-md-12
+        //- .mask-map
+        iframe(src='https://www.google.com/maps/embed/v1/place?q=%E5%8F%B0%E5%A4%A7%E7%A4%BE%E7%A7%91%E9%99%A2&key=AIzaSyAM9qU6v10eLxwO97_lG3T5splb_polLak', style="width:100%;height:450px;border:0;" frameborder='0', allowfullscreen='')
+
+block js
+  script.
+    setTimeout(function(){
+      document.querySelectorAll('#navbar ul li')[3].classList.add('active');
+    }, 0);

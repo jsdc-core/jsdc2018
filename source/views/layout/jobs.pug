@@ -1,0 +1,18 @@
+extends ../partials/_layout
+
+block content
+  .container#jobs
+    bot-ui
+
+  script(src='https://cdn.jsdelivr.net/vue/latest/vue.min.js')
+  script(src='./js/botui.min.js')
+  script(src='./js/jobs.min.js')
+block css
+  link(rel='stylesheet', href='./css/botui/botui.css')
+  link(rel='stylesheet', href='https://unpkg.com/botui/build/botui-theme-default.css')
+
+block js
+  script.
+    setTimeout(function(){
+      document.querySelectorAll('#navbar ul li')[7].classList.add('active');
+    }, 0);
