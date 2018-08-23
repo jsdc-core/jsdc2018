@@ -45,16 +45,49 @@ block content
           header.text-center
             h2 售票資訊
       .ticket-container.row
-        .ticket-info.col-md-12
+        .ticket-info.col-md-6
           .ticket-1
-            h3 JSDC 2017 晚鳥票
+            h3 JSDC 2018 學生票
             h4 November 04-05, 2017
             .ticket-price
               | TWD 3,950
             a.ticket-booking(href="https://kktix.com/events/jsdc2017/registrations/new", target="_blank")
               | BOOK NOW
-
+        .ticket-info.col-md-6
+          .ticket-1
+            h3 JSDC 2018 早鳥票
+            h4 November 04-05, 2017
+            .ticket-price
+              | TWD 3,950
+            a.ticket-booking(href="https://kktix.com/events/jsdc2017/registrations/new", target="_blank")
+              | BOOK NOW
+      .ticket-container.row
+        .ticket-info.col-md-6
+          .ticket-1
+            h3 JSDC 2018 一般票
+            h4 November 04-05, 2017
+            .ticket-price
+              | TWD 3,950
+            a.ticket-booking(href="https://kktix.com/events/jsdc2017/registrations/new", target="_blank")
+              | BOOK NOW
+        .ticket-info.col-md-6
+          .ticket-1
+            h3 JSDC 2018 團報票
+            h4 November 04-05, 2017
+            .ticket-price
+              | TWD 3,950
+            a.ticket-booking(href="https://kktix.com/events/jsdc2017/registrations/new", target="_blank")
+              | BOOK NOW
+  
+  section#reciprocal
+    ul#time
+      each val in [1, 2, 3, 4, 5, 6, 7, 8]
+        li
+          div.num_img
+            img(src="images/number/0.png", alt="")
+            img(src="images/number/0.png", alt="")
 block js
+  script(src='./js/index.min.js')
   script.
     setTimeout(function(){
       document.querySelectorAll('#navbar ul li')[0].classList.add('active');

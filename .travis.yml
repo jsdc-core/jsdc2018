@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-- '6'
+- '8'
 cache: yarn
 before_install:
 - openssl aes-256-cbc -K $encrypted_093d46b61b77_key -iv $encrypted_093d46b61b77_iv
@@ -11,7 +11,7 @@ before_install:
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name "JSDC Taiwan"
 - git config --global user.email hq@jsdc.tw
-- git clone -b gh-pages git@github.com:jsdc-core/jsdc2017.git dist
+- git clone -b gh-pages git@github.com:webber0928/test2018.git dist
 install:
 - yarn install
 script:
