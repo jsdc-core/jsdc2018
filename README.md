@@ -1,7 +1,7 @@
 # jsdc2018
 
 ### Build Status
-[![Build Status](https://travis-ci.org/webber0928/test2018?branch=develop)](https://travis-ci.org/webber0928/test2018)
+[![Build Status](https://travis-ci.org/jsdc-core/jsdc2018.svg?branch=master)](https://travis-ci.org/jsdc-core/jsdc2018)
 
 ### :: step 1
 
