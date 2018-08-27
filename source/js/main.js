@@ -5,23 +5,23 @@
         var nightTicketEndDay = new Date('2018/11/16 22:00:00').getTime();
         var confStartDay = new Date('2018/11/17 09:00:00').getTime();
         var confEndtDay = new Date('2018/11/18 17:00:00').getTime();
-        var countdownTitle = document.getElementsByClassName('content')[0];
+        // var countdownTitle = document.getElementsByClassName('content')[0];
         var ticketButtonText = document.getElementsByClassName('ticket-booking')[0];
 
         if (nightTicketEndDay > Date.now()) {
           specifyDay = nightTicketEndDay;
-          countdownTitle.innerHTML = 'countdown ticket';
+          // countdownTitle.innerHTML = 'countdown ticket';
 
         } else if (confStartDay > Date.now()) {
           specifyDay = confStartDay;
-          countdownTitle.innerHTML = 'jsdc 2018 countdown';
+          // countdownTitle.innerHTML = 'jsdc 2018 countdown';
 
         } else if (confEndtDay > Date.now()) {
           specifyDay = confEndtDay;
-          countdownTitle.innerHTML = 'countdown to the end of jsdc';
+          // countdownTitle.innerHTML = 'countdown to the end of jsdc';
 
         } else {
-          countdownTitle.innerHTML = 'see you jsdc 2018';
+          // countdownTitle.innerHTML = 'see you jsdc 2018';
           clearInterval(countdown);
           return;
         }

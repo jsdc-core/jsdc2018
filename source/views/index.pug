@@ -5,38 +5,17 @@ block content
   section#header
     .container
       .title.row
-        .logo.col-md-6
-          img(src='./images/official/jsdc-logo.svg')
         .jsdc-full-name.col-md-6
-          span JavaScript
-          span Developer
+          span 2018
+          span JavaScript Developer
           span Conference
-          span November 17-18, 2018
-
-      .slogan.row
-        .col-md-12
-          span Be
-          span  A
-          span  Co
-          span der
-      .count-down.row
-        .content.col-md-12
-          | countdown ticket
-        .clearfix
-        .time-content
-          .date
-            | --
-          .hours
-            | --
-          .minutes
-            | --
-          .seconds
-            | --
-        .conference-and-count-down-info
-          .info
-            | 2018 年 11 月 17 - 18 正式登場
-          .position
-            | 臺灣大學 社會科學院
+          br
+          span 2018.11.17-18
+          span 自由廣場會議中心國際演藝圈
+          span 台北市內湖區瑞光路399號2號
+        .logo.col-md-6
+          img(src='./images/official/main_visual.png')
+      .clearfix
 
   section#ticket
     .container
@@ -48,7 +27,6 @@ block content
         .ticket-info.col-md-6
           .ticket-1
             h3 JSDC 2018 學生票
-            h4 November 17-18, 2018
             .ticket-price
               | TWD 3,950
             a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
@@ -56,7 +34,6 @@ block content
         .ticket-info.col-md-6
           .ticket-1
             h3 JSDC 2018 早鳥票
-            h4 November 17-18, 2018
             .ticket-price
               | TWD 3,950
             a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
@@ -65,7 +42,6 @@ block content
         .ticket-info.col-md-6
           .ticket-1
             h3 JSDC 2018 一般票
-            h4 November 17-18, 2018
             .ticket-price
               | TWD 3,950
             a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
@@ -73,19 +49,36 @@ block content
         .ticket-info.col-md-6
           .ticket-1
             h3 JSDC 2018 團報票
-            h4 November 17-18, 2018
             .ticket-price
               | TWD 3,950
             a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
               | BOOK NOW
 
-  section#reciprocal
-    ul#time
-      each val in [1, 2, 3, 4, 5, 6, 7, 8]
-        li
-          div.num_img
-            img(src="images/number/0.png", alt="")
-            img(src="images/number/0.png", alt="")
+  section#header
+    .container
+      .count-down.row
+        //- .content.col-md-12
+          //- | countdown ticket
+        .clearfix
+        .time-content
+          .date
+            | --
+          .hours
+            | --
+          .minutes
+            | --
+          .seconds
+            | --
+      br
+      br
+
+  //- section#reciprocal
+  //-   ul#time
+  //-     each val in [1, 2, 3, 4, 5, 6, 7, 8]
+  //-       li
+  //-         div.num_img
+  //-           img(src="images/number/0.png", alt="")
+  //-           img(src="images/number/0.png", alt="")
 block js
   script(src='./js/index.min.js')
   script.

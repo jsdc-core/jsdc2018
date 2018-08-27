@@ -13,25 +13,21 @@ $screen-md: 992px;
       .title {
         .logo {
           text-align: center;
+          padding-bottom: 25px;
 
           & > img {
             margin-right: 0;
           }
         }
         .jsdc-full-name {
+          top: 25px;
           margin-top: 10px;
           margin-left: 0;
 
           & > span {
-            &:last-of-type {
-              font-size: 1.9rem;
-              text-align: center;
-              width: 100%;
-            }
-
-            &:not(:last-of-type) {
-              visibility: hidden;
-            }
+            font-size: 1.6rem;
+            line-height: 140%;
+            width: 100%;
           }
         }
       }
@@ -140,12 +136,13 @@ $screen-md: 992px;
 @media (max-width: $screen-sm) {
 
   #header {
-    padding: 12vh 0;
+    padding: 0;
 
     .container {
       .title {
         .logo {
           text-align: center;
+          padding-bottom: 25px;
 
           & > img {
             margin-right: 0;
@@ -156,16 +153,22 @@ $screen-md: 992px;
           margin-left: 0;
 
           & > span {
-            &:last-of-type {
-              font-size: 1.9rem;
-              text-align: center;
-              margin-top: 1rem;
-              width: 100%;
-            }
+            font-size: 1.6rem;
+            line-height: 140%;
+            width: 100%;
 
-            &:not(:last-of-type) {
-              visibility: hidden;
+            &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
+              line-height: 160%;
+              letter-spacing: 4px;
             }
+            &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6) {
+              line-height: 140%;
+              font-size: 1.6rem;
+              letter-spacing: 2px;
+            }
+            // &:not(:last-of-type) {
+            //   visibility: hidden;
+            // }
           }
         }
       }
@@ -273,7 +276,7 @@ $screen-md: 992px;
 
   /* Header */
   #header {
-    padding: 12vh 0;
+    padding: 0;
 
     .title{
 

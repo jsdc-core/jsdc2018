@@ -34,7 +34,7 @@ body{
 /* Start form small devices */
 
 #navbar {
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(40, 19, 91, 0.5);
   @include vendor('border-radius', '0');
   border-bottom: none;
   margin: 0;
@@ -43,7 +43,7 @@ body{
   width: 100vw;
 
   .icon-bar {
-    background-color: black;
+    background-color: white;
   }
   .navbar-toggle {
     border: 1px solid gray;
@@ -67,7 +67,7 @@ body{
     z-index: 9999;
 
     a {
-      color: gray;
+      color: #bebebc;
 
       &:hover {
         color: #0089ac;
@@ -77,8 +77,8 @@ body{
 
     &.active {
       a {
-        background-color: white;
-        color: #0089ac;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #28135b;
         font-weight: 900;
       }
     }
@@ -88,79 +88,57 @@ body{
 /* Header */
 #header {
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   // text-align: center;
   height: 100%;
   padding: 13vh 20px 0;
+  background-image: url('../images/official/head-bg.png');
 
   .container {
     .title {
-      height: 150px;
+      // height: 150px;
       margin-top: 30px;
+      position: relative;
 
       .logo {
         text-align: right;
         height: 100%;
 
         & > img {
-          height: 100%;
+          width: 100%;
           margin-right: 60px;
+          top: 65px;
+          position: relative;
         }
       }
       .jsdc-full-name {
         text-align: left;
-        margin-left: -75px;
+        color: #fff;
+        top: 110px;
 
         span {
           display: block;
-          width: 275px;
-          font-size: 3rem;
-          line-height: 3.3rem;
+          // width: 275px;
+          font-size: 2.5rem;
           cursor: default;
 
-          &:nth-of-type(1) {
-            letter-spacing: calc(1rem + 2px);
+          &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3) {
+            line-height: 3.3rem;
+            letter-spacing: 4px;
           }
-          &:nth-of-type(2) {
-            letter-spacing: calc(1rem + 4px);
+          &:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6) {
+            line-height: 140%;
+            font-size: 1.6rem;
+            letter-spacing: 2px;
           }
-          &:nth-of-type(3) {
-            letter-spacing: calc(1rem + 0.5px);
-          }
+          // &:nth-of-type(3) {
+          //   letter-spacing: calc(1rem + 0.5px);
+          // }
 
-          &:last-child {
-            font-size: 2.5rem;
-            letter-spacing: -0.02rem;
-          }
-        }
-      }
-    }
-    .slogan {
-      text-align: center;
-      cursor: default;
-      margin-top: 40px;
-
-      span {
-        text-align: center;
-        font-size: 8rem;
-
-        &:nth-of-type(1) {
-          color: #FFBF00;
-        }
-        &:nth-of-type(2) {
-          color: #E83F6F;
-        }
-        &:nth-of-type(3) {
-          color: #2274A5;
-        }
-        &:nth-of-type(4) {
-          color: #32936F;
-        }
-      }
-
-      &:hover {
-        & span {
-          color: #4CC1FC;
+          // &:last-child {
+          //   font-size: 2.5rem;
+          //   letter-spacing: -0.02rem;
+          // }
         }
       }
     }
@@ -213,6 +191,7 @@ body{
 #ticket {
   padding-top: 60px;
   background-color: #f2f2f2;
+  background-image: url(../images/official/background.png);
 
   .ticket-container {
 
@@ -222,7 +201,10 @@ body{
         margin: 0 auto 35px;
         text-align: center;
         padding: 15px;
-        border: 2px solid rgba(51, 51, 51, 0.5);
+        background-image: url(../images/official/ticket.png);
+        background-size: 100% 100%;
+        // border: 2px solid rgba(51, 51, 51, 0.5);
+        color: #28135b;
 
         .ticket-price, .ticket-booking {
           display: inline-block;
@@ -244,7 +226,12 @@ body{
           }
         }
 
+        h2 {
+          color: #28135b;
+        }
+
         h3, h4 {
+          color: #28135b;
           border-bottom: 1px solid;
         }
       }
@@ -269,7 +256,8 @@ body{
 
       .num_img {
         position: relative;
-        top: 0;
+        // top: 0;
+        bottom: 0;
       }
     }
 
