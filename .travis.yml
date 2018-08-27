@@ -3,15 +3,15 @@ node_js:
 - '8'
 cache: yarn
 before_install:
-- openssl aes-256-cbc -K $encrypted_093d46b61b77_key -iv $encrypted_093d46b61b77_iv
-  -in .travis/id_rsa_jsdc.enc -out ~/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_3f2c6737c96b_key -iv $encrypted_3f2c6737c96b_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
 - ssh-add ~/.ssh/id_rsa
 - cp .travis/ssh_config ~/.ssh/config
 - git config --global user.name "JSDC Taiwan"
 - git config --global user.email hq@jsdc.tw
-- git clone -b gh-pages git@github.com:webber0928/test2018.git dist
+- git clone -b gh-pages git@github.com:jsdc-core/jsdc2018.git dist
 install:
 - yarn install
 script:
