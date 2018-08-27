@@ -17,6 +17,7 @@ $screen-md: 992px;
 
           & > img {
             margin-right: 0;
+            right: calc((100vw - 1170px) / 2 - 5px);
           }
         }
         .jsdc-full-name {
@@ -146,6 +147,8 @@ $screen-md: 992px;
 
           & > img {
             margin-right: 0;
+            right: -15px;
+            // right: calc((100vw - 1170px) / 2 - 5px);
           }
         }
         .jsdc-full-name {
