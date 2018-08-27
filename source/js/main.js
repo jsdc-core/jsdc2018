@@ -2,9 +2,9 @@
     if (location.pathname === '/')
       var countdown = setInterval(function(){
         var specifyDay = null;
-        var nightTicketEndDay = new Date('2017/10/18 22:00:00').getTime();
-        var confStartDay = new Date('2017/11/04 09:00:00').getTime();
-        var confEndtDay = new Date('2017/11/05 17:00:00').getTime();
+        var nightTicketEndDay = new Date('2018/11/16 22:00:00').getTime();
+        var confStartDay = new Date('2018/11/17 09:00:00').getTime();
+        var confEndtDay = new Date('2018/11/18 17:00:00').getTime();
         var countdownTitle = document.getElementsByClassName('content')[0];
         var ticketButtonText = document.getElementsByClassName('ticket-booking')[0];
 
@@ -14,7 +14,7 @@
 
         } else if (confStartDay > Date.now()) {
           specifyDay = confStartDay;
-          countdownTitle.innerHTML = 'jsdc 2017 countdown';
+          countdownTitle.innerHTML = 'jsdc 2018 countdown';
 
         } else if (confEndtDay > Date.now()) {
           specifyDay = confEndtDay;
