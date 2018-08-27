@@ -4,7 +4,7 @@ node_js:
 cache: yarn
 before_install:
 - openssl aes-256-cbc -K $encrypted_3f2c6737c96b_key -iv $encrypted_3f2c6737c96b_iv
-  -in .travis/id_rsa.enc -out ~\/.ssh/id_rsa -d
+  -in .travis/id_rsa.enc -out ~/.ssh/id_rsa -d
 - chmod 600 ~/.ssh/id_rsa
 - eval $(ssh-agent)
 - ssh-add ~/.ssh/id_rsa
