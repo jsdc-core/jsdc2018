@@ -54,21 +54,29 @@ block content
             a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
               | BOOK NOW
 
-  section#header
+  section#header(style="background-image: none")
     .container
       .count-down.row
         //- .content.col-md-12
           //- | countdown ticket
         .clearfix
         .time-content
-          .date
-            | --
-          .hours
-            | --
-          .minutes
-            | --
-          .seconds
-            | --
+          .date(style="background-image: none")
+            .num(style="float: left")
+            .num(style="float: left")
+          span(style="position: relative;left: -30px;top: -20px;") D
+          .hours(style="background-image: none")
+            .num(style="float: left")
+            .num(style="float: left")
+          span(style="position: relative;left: -30px;top: -20px;") H
+          .minutes(style="background-image: none")
+            .num(style="float: left")
+            .num(style="float: left")
+          span(style="position: relative;left: -30px;top: -20px;") M
+          .seconds(style="background-image: none")
+            .num(style="float: left")
+            .num(style="float: left")
+          span(style="position: relative;left: -30px;top: -20px;") S
       br
       br
 
