@@ -49,11 +49,8 @@
 
         var str = toTwo(day) + toTwo(hours) + toTwo(minutes) + toTwo(seconds);
         $('.time-content .num').each(function(i, ele){
-          $(ele).html('<img width=75px src="images/number/'+str.charAt(i)+'.png">');
-          console.log(str.charAt(i))
+          $(ele).html('<img width=100% src="images/number/'+str.charAt(i)+'.png">');
         });
-        console.log('L46');
-        // console.log(`${str}`);
 
         // $('.date').text(day.toString().length === 1?'0'+ day:day);
         // $('.hours').text(hours.toString().length === 1?'0'+ hours:hours);

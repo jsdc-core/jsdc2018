@@ -39,12 +39,18 @@ $screen-md: 992px;
             height: 120px;
             line-height: 120px;
             font-size: 50px;
+            margin-right: 0;
           }
           .hours {
             margin-right: 0;
           }
           .minutes, .seconds {
             margin-top: 20px;
+          }
+          .flag {
+            position: relative;
+            left: -3px;
+            top: -7px;
           }
         }
       }
@@ -182,12 +188,18 @@ $screen-md: 992px;
             height: 120px;
             line-height: 120px;
             font-size: 50px;
+            margin-right: 0;
           }
           .hours {
             // margin-right: 20;
           }
           .minutes, .seconds {
             margin-top: 20px;
+          }
+          .flag {
+            position: relative;
+            left: -3px;
+            top: -7px;
           }
         }
       }

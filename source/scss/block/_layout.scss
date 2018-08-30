@@ -151,32 +151,27 @@ body{
         text-transform:uppercase;
       }
       .time-content {
-        margin-top: 20px;
+        margin-top: -50px;
 
         .date, .hours, .minutes, .seconds {
           width: 150px;
           height: 150px;
           line-height: 150px;
-          color: white;
-          font-size: 90px;
           display: inline-block;
           margin-right: 40px;
 
           &:last-child {
             margin-right: 0;
           }
+          .num {
+            width: 50%;
+            float: left;
+          }
         }
-        .date {
-          background-image: url('../images/official/count-down-1.svg');
-        }
-        .hours {
-          background-image: url('../images/official/count-down-2.svg');
-        }
-        .minutes {
-          background-image: url('../images/official/count-down-3.svg');
-        }
-        .seconds {
-          background-image: url('../images/official/count-down-4.svg');
+        .flag {
+          position: relative;
+          left: -30px;
+          top: -7px;
         }
       }
       .conference-and-count-down-info {
