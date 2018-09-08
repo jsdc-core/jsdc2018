@@ -5,7 +5,7 @@
       }
       var countdown = setInterval(function(){
         var specifyDay = null;
-        var nightTicketEndDay = new Date('2018/09/16 22:00:00').getTime();
+        var nightTicketEndDay = new Date('2018/11/17 09:00:00').getTime();
         var confStartDay = new Date('2018/11/17 09:00:00').getTime();
         var confEndtDay = new Date('2018/11/18 17:00:00').getTime();
         // var countdownTitle = document.getElementsByClassName('content')[0];
