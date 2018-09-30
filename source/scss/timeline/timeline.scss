@@ -18,6 +18,9 @@
 //   margin-top: 50px;
 //   text-align: center;
 // }
+body .jsdc-background {
+  background-color: #dddddd47;
+}
 #agenda {
   .date {
     text-align: center;
@@ -50,7 +53,7 @@
 
     input[value='day-1']:checked {
       &+label {
-        background-color: rgba(44, 154, 184, 1);
+        background-color: #28135b;
         text-decoration: underline;
       }
       &~.day-1 {
@@ -163,7 +166,7 @@
     }
   }
   .timeline {
-    border-left: 4px solid #2c9ab8;
+    border-left: 4px solid #28135b;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     background: rgba(255, 255, 255, 0.03);
@@ -202,7 +205,7 @@
       word-wrap: break-word;
     }
     .event {
-      border-bottom: 1px dashed #2c9ab8;
+      border-bottom: 1px dashed #28135b;
       padding-bottom: 25px;
       margin-bottom: 50px;
       position: relative;
@@ -227,7 +230,7 @@
         position: absolute;
         display: block;
         top: 0;
-        box-shadow: 0 0 0 4px #2c9ab8;
+        box-shadow: 0 0 0 4px #28135b;
         left: -57.85px;
         background: #b8cb5e;
         border-radius: 50%;
