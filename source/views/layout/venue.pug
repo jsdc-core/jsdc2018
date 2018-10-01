@@ -4,37 +4,36 @@ block content
   section#venue
     .row
       .col-md-12(style="text-align:center;")
-        h1 國立臺灣大學社會科學院
+        h1 富邦國際會議中心
     .row
       .col-md-12
         h3 自行開車前往
         p
-          | 臺大社會科學院大樓位於臺大校總區北門（辛亥路與復興南路交叉口的西南角）的西側，靠近法律系霖澤館。停車場位於本院大樓地下室 B1和 B2（建議停 B2，停車位多而方便），入口請
+          | 臺北市松山區敦化南路一段108號B2F
           ol
-            li 由復興南路往南穿過辛亥路進入臺大北門，再右轉進入停車場。
-            li 由辛亥路往東行駛，在復興南路口右轉進入台大北門，50 公尺後再右轉進入停車場。
+            li 國道一號: 由圓山交流道下，轉建國高架道路南行至民權東路出口，續行過民權東路至迴轉道迴轉至民權東路右轉，行至敦化南路右轉直行至市民大道後再右轉，隨即至本大樓停車場停車即可。
+            li 國道三號: 由台北聯絡道下敦化南路端，直行至市民大道後右轉，至迴轉道迴轉往敦化南路經過敦化南路後，隨即至本大樓停車場停車即可。
     .row
       .col-md-12
         h3 捷運路線
         ol
-          li 捷運科技大樓站 （文湖線）：捷運科技大樓站出口左轉，沿著復興南路步行至辛亥路交叉口，過馬路即可抵達臺大北門，右手邊大樓即為社會科學院，步行路程約 10 分鐘。捷運科技大樓站設有 Ubike 站點，可騎乘 Ubike 至臺大社科院。
-          li 捷運公館站（新店線）：捷運公館站，沿著羅斯福路步行進入臺大校園，循椰林大道直行，往社科院大樓方向，步行約 30 分鐘。捷運公館站設有 Ubike，可騎乘 Ubike 至臺大社科院。
+          li 板南線忠孝敦化站8號出口或東區地下街9號出口，直行敦化南路至市民大道口，步行約10分鐘。
     .row
       .col-md-12
         h3 公車路線
         ol
-          li 青年活動中心站(辛亥路上)：237 / 295 / 298
-          li 台大資訊大樓站(辛亥路上)：298 / 捷運公館線
-          li 大安健康服務中心(復興南路上) ：237/ 295
-          li 台大公館醫院(基隆路上) ：1 / 207 / 275 / 275 副 / 650 / 672 / 673 / 905 / 905 副 / 906 / 906 副 / 907 / 907 區 / 909 / 1032 / 1550 / 1551 / 5350
-          li 捷運公館站(羅斯福路上) ：1 / 109 / 207 / 208 / 672 / 673 / 907 / 1505 / 捷運公館線 / 敦化幹線 / 棕 12 / 綠 11
+          li 市民大道口：0東 \ 33 \ 41 \ 52 \ 262 \ 275 \ 278 \ 285 \ 292 \ 605 \ 630 \ 902 \ 905 \ 906 \ 909 \ 1211 \ 5350 \ 敦化幹線
+          li 市民敦化路口：0東 \ 33 \ 41 \ 52 \ 262 \ 275 \ 285 \ 292 \ 521 \ 605 \ 630 \ 902 \ 903 \ 905 \ 906 \ 909 \ 1211 \ 敦化幹線
     .row
       .col-md-12
         //- .mask-map
-        iframe(src='https://www.google.com/maps/embed/v1/place?q=%E5%8F%B0%E5%A4%A7%E7%A4%BE%E7%A7%91%E9%99%A2&key=AIzaSyAM9qU6v10eLxwO97_lG3T5splb_polLak', style="width:100%;height:450px;border:0;" frameborder='0', allowfullscreen='')
-
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.6626197344885!2d121.54628671496255!3d25.045521143983603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abdb4d50fe81%3A0x2c2011e45417d1bc!2z5a-M6YKm5Lq65aO95aSn5qiT5ZyL6Zqb5pyD6K2w5Lit5b-D!5e0!3m2!1szh-TW!2stw!4v1538412862921" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen)
 block js
   script.
     setTimeout(function(){
-      document.querySelectorAll('#navbar ul li')[3].classList.add('active');
+      document.querySelectorAll('#navbar ul li')[2].classList.add('active');
     }, 0);
+
+block css
+  style(type='text/css').
+    body .jsdc-background { background-color: #f2f2f2; }

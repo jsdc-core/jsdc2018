@@ -37,7 +37,7 @@ block content
                             h3 #{content.name}
                       else
                         .col-md-6(style="cursor:pointer;" onclick="agendaDetail('"+index+"',"+agendaIndex+","+contentIndex+")")
-                          span.room(data-room=(contentIndex) class='room-'+contentIndex)
+                          span.room(data-room=(contentIndex==101?"A":"C") class='room-'+contentIndex)
 
                           if (content.speaker)
                             - var info = speakers[content.speaker];
@@ -74,5 +74,5 @@ block js
   script(src='https://cdnjs.cloudflare.com/ajax/libs/core-js/2.4.1/core.js')
   script.
     setTimeout(function(){
-      document.querySelectorAll('#navbar ul li')[5].classList.add('active');
+      document.querySelectorAll('#navbar ul li')[3].classList.add('active');
     }, 0);

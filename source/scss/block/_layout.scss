@@ -198,14 +198,14 @@ body{
         text-align: center;
         // padding: 15px;
         padding: 25px 10px;
-        background-image: url(../images/official/ticket-bg.png);
-        background-size: 100% 100%;
+        //background-image: url(../images/official/ticket-bg.png);
+        //background-size: 100% 100%;
         // border: 2px solid rgba(51, 51, 51, 0.5);
         color: #28135b;
         background-repeat: repeat-y;
         background-size: 100% 1%;
-        border-bottom: 2px solid;
-        border-top: 2px solid;
+        border: 2px solid;
+        // border-top: 2px solid;
 
         .ticket-price, .ticket-booking {
           display: inline-block;
@@ -375,8 +375,8 @@ body{
   padding: 60px 20px 0;
 
   #about-jsdc{
-    border-bottom: 1px solid $jsdc-y;
-    border-radius: _size(border-radius);
+    border-bottom: 1px solid #28135b;
+    // border-radius: _size(border-radius);
     padding: 60px 15px;
 
     .major{
