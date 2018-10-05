@@ -9,30 +9,30 @@ block content
       .container
         .grid.row
           each val, index in speakers
-            .grid-item.col-md-3
+            .grid-item.col-md-4(style="min-height:400px;")
               //- if val.isKeynote
                 label.label.label-success.label-sm.is-keynote
                   | Keynote
-              .thumbnail
+              .thumbnail(style="min-height:400px;")
                 if val.image
                   img.img-circle(src='./images/speakers/' + val.image, width='200')
                 else
                   img.img-circle(src='./images/jsdc-mascot-150.jpg', width='200')
                 .caption
                   h3.text-center.author-name #{val.name}
-                  .text-center #{val.company}
+                  .text-center #{val.company || 'None'}
                   .text-center
                     if val.links.blog
-                      a.btn.btn-link.btn-github.btn-sm(target='_blank' href=val.links.blog)
+                      a.btn.btn-link.btn-github(target='_blank' href=val.links.blog)
                         i.fa.fa-link
                     if val.links.github
-                      a.btn.btn-link.btn-link.btn-sm(target='_blank' href=val.links.github)
+                      a.btn.btn-link.btn-link(target='_blank' href=val.links.github)
                         i.fa.fa-github
                     if val.links.twitter
-                      a.btn.btn-link.btn-link.btn-sm(target='_blank' href=val.links.twitter)
+                      a.btn.btn-link.btn-link(target='_blank' href=val.links.twitter)
                         i.fa.fa-twitter
                     if val.links.medium
-                      a.btn.btn-link.btn-link.btn-sm(target='_blank' href=val.links.medium)
+                      a.btn.btn-link.btn-link(target='_blank' href=val.links.medium)
                         i.fa.fa-medium
                   div #{val.description}
 
