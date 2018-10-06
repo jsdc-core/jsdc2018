@@ -705,3 +705,20 @@ body{
     background-color: transparent;
   }
 }
+
+#google_translate_element {
+  .goog-te-gadget-simple {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 2px 7px;
+    border-radius: 15px;
+    color: #28135b;
+    a, span {
+      color: #000;
+      font-weight: bold;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
