@@ -7,6 +7,9 @@ block content
       h2.text-center TBD
     else
       .container
+        .row
+          .col-md-12(style="text-align:center;")
+            h1 JSDC 2018 講者
         .grid.row
           each val, index in speakers
             .grid-item.col-md-4(style="min-height:400px;")
@@ -34,6 +37,11 @@ block content
                     if val.links.medium
                       a.btn.btn-link.btn-link(target='_blank' href=val.links.medium)
                         i.fa.fa-medium
+                    if val.links.links
+                      a.btn.btn-link.btn-link(target='_blank' href=val.links.links)
+                        i.fa.fa-link
+                    if !val.links.links && !val.links.blog && !val.links.github && !val.links.twitter && !val.links.medium
+                      i.fa.fa-unlink(style="visibility:hidden;")
                   div #{val.description}
 
 block js
@@ -47,3 +55,7 @@ block js
         itemSelector: '.grid-item'
       });
     }, 0);
+
+block css
+  style(type='text/css').
+    body .jsdc-background { background-color: #f2f2f2; }
