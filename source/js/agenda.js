@@ -11,14 +11,17 @@
     if (currentAgendaContent.speaker) {
       var currentSpeakerData = speakerData[currentAgendaContent.speaker];
       var currntAgendaData = currentSpeakerData.agenda;
+      var formatString;
 
       swalOptions.title = currentSpeakerData.name;
       swalOptions.imageUrl = './images/speakers/' + currentSpeakerData.image;
       swalOptions.html = '<h4>'+currntAgendaData.title+'</h4>';
       if (currntAgendaData.outline)
-        swalOptions.html += '<div class="agenda-outline">' + currntAgendaData.outline + '<div>';
+        swalOptions.html += '<div class="agenda-outline">' +
+          currntAgendaData.outline +
+          '</div>';
       else
-        swalOptions.html += '<div class="agenda-outline"><img src="./images/jsdc-mascot-150.jpg"/ style="height: 50px;margin: 10px 10px 10px 0;">噓！講者保密到家。<div>';
+        swalOptions.html += '<div class="agenda-outline"><img src="./images/jsdc-mascot-150.jpg"/ style="height: 50px;margin: 10px 10px 10px 0;">噓！講者保密到家。</div>';
     } else {
       swalOptions.title = '我是犀牛啦！';
       swalOptions.imageUrl = './images/jsdc-mascot-150.jpg';

@@ -653,12 +653,15 @@ body{
       padding-top: 0;
     }
     .agenda-outline {
-      max-height: 100px;
+      max-height: 150px;
       overflow-y: auto;
       border: 1px dashed gray;
+      text-align: left;
+      padding: 7px 10px;
     }
     .swal2-close {
       width: auto;
+      outline: none;
     }
   }
 }
