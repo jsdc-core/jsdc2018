@@ -691,12 +691,35 @@ body{
   .company-logo {
     width: 100%;
     margin-bottom: 1em;
+    border-bottom: 1px solid;
+    padding-bottom: 7px;
   }
 
   .company-description {
     color: black;
     max-height: 250px;
     overflow-y: auto;
+  }
+
+  div.platinum {
+    border: 2px solid #ffc525;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  div.gold {
+    border: 2px solid #ffc525;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  div.silver {
+    border: 2px solid #a1a1a1;
+    border-radius: 4px;
+    padding: 20px;
+  }
+  div.special {
+    border: 2px solid #777;
+    border-radius: 4px;
+    padding: 20px;
   }
 }
 
