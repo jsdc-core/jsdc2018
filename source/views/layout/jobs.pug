@@ -10,9 +10,13 @@ block content
 block css
   link(rel='stylesheet', href='./css/botui/botui.css')
   link(rel='stylesheet', href='https://unpkg.com/botui/build/botui-theme-default.css')
+  style(type='text/css').
+    body .jsdc-background { background-color: #f2f2f2; }
+    input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover, .typeform-button:hover { background-color:#28135b; }
+    .botui-actions-buttons > button { margin-left: 10px;margin-bottom: 7px; display: block; }
 
 block js
   script.
     setTimeout(function(){
-      document.querySelectorAll('#navbar ul li')[7].classList.add('active');
+      document.querySelectorAll('#navbar ul li')[6].classList.add('active');
     }, 0);

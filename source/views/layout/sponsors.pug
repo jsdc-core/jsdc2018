@@ -6,8 +6,7 @@ block content
       div(class=key)
         img.company-logo(src=data.logo)
         if col > 2
-          .company-description
-            | #{data.description}
+          .company-description!= data.description
 
   .container-fluid#sponsors
     each sponsorItems, sponsorIndex in sponsors

@@ -2,66 +2,76 @@
   var botui = new BotUI('jobs');
   var companys = [
     {
-      text: '摩速科技',
-      value: 'mlytics',
+      text: '英諾瓦資訊科技服務有限公司',
+      value: 'Innova Solutions Taiwan, LTD.',
       jobs: [
         {
-          text: 'Software Engineer (Frontend)',
+          text: 'Frontend Fullstack Developer - React.js Node.js JavaScript',
           value: 'F2E',
-          intro: ['薪資：能力 + 態度 = 40k ~ 能力越好越高', '條件：5 年開發經驗佳，會 React、Vue、Angular 其中一項且有與設計師溝通經驗者優先考量', '能獨自管理開發項目、能辨別開發項目的難易度'],
-          url: 'https://github.com/jsdc-core/jsdc2017/issues/4'
+          intro: ['Required: ', '- 2+ years of experience as a Front End SWE/Developer utilizing skills such as HTML, CSS and JavaScript', '- 1+ years of experience with the following user interface technologies: React.js, Node.js and WebPack', 'Preferred: ', '- Experience building/consuming REST web services.', '- Background in RESTful API development, relational databases, and complex systems integration.', '- Modern CI/CD pipeline tooling including GIT, GitHub/GitLab, JIRA, and Jenkins ', '- Experience configuring/automating/supporting AWS environments. ', '- Demonstrated technical lead experience as user interface software engineer. ', '- Demonstrated design experience for corporate user interfaces.'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/1'
+        },{
+          text: 'Software QA Engineer （美商，有機會至美國出差）',
+          value: 'F2E',
+          intro: ['Required: ', '- Experience with scripting FTP file transfer integrations', '- Experience with Microservice testing', '- Experience with white box testing', '- Solid understanding of agile software quality assurance and processes.', '- Strong desire to join and influence an agile development team and build quality software.', '- Participating in the planning, development and testing of key features as a member of an agile team.', '- Investigate and implement new agile testing methodologies for robustness and efficiency.', '- Work with Product Owner to define acceptance criteria.', '- Work with Developers to understand the scope and requirements implied in acceptance criteria.', '- Build automated test to validate story acceptance criteria.'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/2'
+        },{
+          text: 'Data Engineer (IHDP) 美商',
+          value: 'F2E',
+          intro: ['Required: ', '- Working knowledge of high-level languages such as Java / C#. ', '- Create custom Spark SQL queries to help support the analytics team. ', '- Experience with SQL queries design and development ', '- Experience with Data warehousing, Data analytics, big data (like Hive, Spark). ', '- Experience with ETL process, implementation, and testing ', '- Experience with Zeppelin Notebook. ', '- Solid understanding of agile software quality assurance and processes. ', '- Strong desire to join and influence an agile development team and build quality software. ', '- Has in-depth software programming ', '- Technical expertise in one or more disciplines or product lines. ', 'Preferred: ',  '- Experience with Cloud experience (AWS, Azure, EMR, HD Insight) preferred ', '- Experience with Web service tools (Postman, SoapUI) preferred ', '- Experience with Unit testing frameworks (junit, nunit) preferred'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/3'
         },
       ]
     },
-    {
-      text: '104 資訊科技',
-      value: '104',
-      jobs: [
-        {
-          text: '資深前端工程師 (Sr.Front-End Web Developer)',
-          value: 'F2E',
-          intro: ['薪資：具市場競爭性，內部公平性的薪酬制度', '條件：React、Vue、Angular 其中一項且具有 SEO、RWD、前端模組開發經驗', '福利：員工持股信託、年度調薪', '其他：JSDC 2017 活動攤位攜帶履歷可現場快速面試，錄取者提供 20,000 獎金'],
-          url: 'https://github.com/jsdc-core/jsdc2017/issues/6'
-        },
-      ]
-    },
-    {
-      text: 'Carousell 旋轉拍賣',
-      value: 'carousell',
-      jobs: [
-        {
-          text: 'Software Engineer, Frontend Web (Taiwan) 前端工程師',
-          value: 'F2E',
-          intro: ['薪資：NTD$ 77,000-154,000/月 (約新幣 3.5-7K)', '條件：React、Flux、Webpack 且具有優化前端效能、團體合作的經驗', '福利：可在旋轉拍賣任一海外辦公室 Remote work 、認股權…', '其他：應徵要準備英文履歷、英文面試', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
-          url: 'https://github.com/jsdc-core/jsdc2017/issues/7',
-          sendCV: 'http://caro.sl/JSDC2017'
-        },
-      ]
-    },
-    {
-      text: 'Pinkoi',
-      value: 'pinkoi',
-      jobs: [
-        {
-          text: 'Frontend Engineer',
-          value: 'F2E',
-          intro: ['薪資：能力 + 態度', '條件：React、Sass、Webpack ，了解跨瀏覽器間會碰到的問題，有使用過 FB 、Google API 經驗'],
-          url: 'https://www.pinkoi.com/about/careers#frontend-engineer',
-        },
-      ]
-    },
-    {
-      text: 'Dcard',
-      value: 'dcard',
-      jobs: [
-        {
-          text: 'Senior Web Frontend Developer',
-          value: 'F2E',
-          intro: ['薪資：60,000 - 100,000，或依經驗與能力面議', '條件：熟 React、Redux、CSS3、 Git，有 SEO 經驗、網頁速度最佳化、據 UI/UX 敏感度、有豐富 Mobile Web 開發經驗等佳', '福利：每周三遠端工作日、彈性工作、各項補助'],
-          url: 'https://github.com/jsdc-core/jsdc2017/issues/8',
-        },
-      ]
-    },
+    // {
+    //   text: '104 資訊科技',
+    //   value: '104',
+    //   jobs: [
+    //     {
+    //       text: '資深前端工程師 (Sr.Front-End Web Developer)',
+    //       value: 'F2E',
+    //       intro: ['薪資：具市場競爭性，內部公平性的薪酬制度', '條件：React、Vue、Angular 其中一項且具有 SEO、RWD、前端模組開發經驗', '福利：員工持股信託、年度調薪', '其他：JSDC 2017 活動攤位攜帶履歷可現場快速面試，錄取者提供 20,000 獎金'],
+    //       url: 'https://github.com/jsdc-core/jsdc2017/issues/6'
+    //     },
+    //   ]
+    // },
+    // {
+    //   text: 'Carousell 旋轉拍賣',
+    //   value: 'carousell',
+    //   jobs: [
+    //     {
+    //       text: 'Software Engineer, Frontend Web (Taiwan) 前端工程師',
+    //       value: 'F2E',
+    //       intro: ['薪資：NTD$ 77,000-154,000/月 (約新幣 3.5-7K)', '條件：React、Flux、Webpack 且具有優化前端效能、團體合作的經驗', '福利：可在旋轉拍賣任一海外辦公室 Remote work 、認股權…', '其他：應徵要準備英文履歷、英文面試', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+    //       url: 'https://github.com/jsdc-core/jsdc2017/issues/7',
+    //       sendCV: 'http://caro.sl/JSDC2017'
+    //     },
+    //   ]
+    // },
+    // {
+    //   text: 'Pinkoi',
+    //   value: 'pinkoi',
+    //   jobs: [
+    //     {
+    //       text: 'Frontend Engineer',
+    //       value: 'F2E',
+    //       intro: ['薪資：能力 + 態度', '條件：React、Sass、Webpack ，了解跨瀏覽器間會碰到的問題，有使用過 FB 、Google API 經驗'],
+    //       url: 'https://www.pinkoi.com/about/careers#frontend-engineer',
+    //     },
+    //   ]
+    // },
+    // {
+    //   text: 'Dcard',
+    //   value: 'dcard',
+    //   jobs: [
+    //     {
+    //       text: 'Senior Web Frontend Developer',
+    //       value: 'F2E',
+    //       intro: ['薪資：60,000 - 100,000，或依經驗與能力面議', '條件：熟 React、Redux、CSS3、 Git，有 SEO 經驗、網頁速度最佳化、據 UI/UX 敏感度、有豐富 Mobile Web 開發經驗等佳', '福利：每周三遠端工作日、彈性工作、各項補助'],
+    //       url: 'https://github.com/jsdc-core/jsdc2017/issues/8',
+    //     },
+    //   ]
+    // },
   ];
   var jobCount = 0;
   companys.forEach(function(company){
