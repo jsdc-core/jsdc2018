@@ -35,31 +35,60 @@
     //     },
     //   ]
     // },
-    // {
-    //   text: 'Carousell 旋轉拍賣',
-    //   value: 'carousell',
-    //   jobs: [
-    //     {
-    //       text: 'Software Engineer, Frontend Web (Taiwan) 前端工程師',
-    //       value: 'F2E',
-    //       intro: ['薪資：NTD$ 77,000-154,000/月 (約新幣 3.5-7K)', '條件：React、Flux、Webpack 且具有優化前端效能、團體合作的經驗', '福利：可在旋轉拍賣任一海外辦公室 Remote work 、認股權…', '其他：應徵要準備英文履歷、英文面試', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
-    //       url: 'https://github.com/jsdc-core/jsdc2017/issues/7',
-    //       sendCV: 'http://caro.sl/JSDC2017'
-    //     },
-    //   ]
-    // },
-    // {
-    //   text: 'Pinkoi',
-    //   value: 'pinkoi',
-    //   jobs: [
-    //     {
-    //       text: 'Frontend Engineer',
-    //       value: 'F2E',
-    //       intro: ['薪資：能力 + 態度', '條件：React、Sass、Webpack ，了解跨瀏覽器間會碰到的問題，有使用過 FB 、Google API 經驗'],
-    //       url: 'https://www.pinkoi.com/about/careers#frontend-engineer',
-    //     },
-    //   ]
-    // },
+    {
+      text: 'Carousell 旋轉拍賣',
+      value: 'carousell',
+      jobs: [
+        {
+          text: 'Senior Software Engineer, Backend (Taiwan)',
+          value: 'F2E',
+          intro: ['Required:', 'Degree in Computer Science, Software Engineering or other equivalent degrees/experience', '5+ years experience in software development', 'Experience in either Go, Python, Django/Flask, RESTful APIs', 'Excellent knowledge of RDBMS and object caches such as PostgreSQL, Memcached, Redis and knowledge of how to design, tune and optimise SQL queries and caching strategies', 'Experience in building large, scalable distributed systems with good understanding of microservices architecture and associated principles', 'Experience with TDD/BDD and agile methodologies', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/4',
+          sendCV: 'https://boards.greenhouse.io/carousell/jobs/1263105'
+        },
+        {
+          text: 'Senior Software Engineer, QA (Taiwan)',
+          value: 'F2E',
+          intro: ['Required:', 'Degree in Computer Science, Software Engineering or other equivalent degrees/experience', 'At least 3-5 years experience in an SDET/QA Engineer role', 'Experience in automated testing of Web & Mobile (iOS and Android) platforms.', 'Strong programming skills in at least one common language such as Python, Go or Java.', 'Strong skills in any of the mobile automation tools like Appium/Calabash/Robotium/Espresso etc.', 'Familiar with or have experience with testing tools such as Selenium WebDriver, JUnit/ TestNG, Ant/Maven/Gradle', 'Experience with continuous integration and continuous deployment systems such as Travis CI or Jenkins', 'Experience using and integrating with standard development tools in your QA workflow such as Git or SVN and Bug tracking tools such as Pivotal Tracker or JIRA.', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/5',
+          sendCV: 'https://boards.greenhouse.io/carousell/jobs/1389855'
+        },
+        {
+          text: 'Software Engineer, Backend (Taiwan)',
+          value: 'F2E',
+          intro: ['Required:', 'Degree in Computer Science, Software Engineering or other equivalent degrees/experience', '2+ years experience in software development', 'Experience in either Go, Python, Django/Flask, RESTful APIs', 'Excellent knowledge of RDBMS and object caches such as PostgreSQL, Memcached, Redis and knowledge of how to design, tune and optimise SQL queries and caching strategies', 'Experience in building large, scalable distributed systems with good understanding of microservices architecture and associated principles', 'Experience with TDD/BDD and agile methodologies', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/6',
+          sendCV: 'https://boards.greenhouse.io/carousell/jobs/1395683'
+        },
+        {
+          text: 'Software Engineer, Frontend Web (Taiwan)',
+          value: 'F2E',
+          intro: ['Required:', 'Commanding grasp of HTML, CSS and JavaScript', 'Experience with modern JavaScript libraries and tooling', 'Familiarity with all aspects of MVC web applications (especially those built on Django/Flask)', 'Proven ability to ship beautiful, stable and high-performance desktop and mobile web applications from start to finish', 'Experience with automated testing framework', 'Strong Computer Science background', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/7',
+          sendCV: 'https://boards.greenhouse.io/carousell/jobs/1395676'
+        },
+      ]
+    },
+    {
+      text: 'Pinkoi',
+      value: 'pinkoi',
+      jobs: [
+        {
+          text: 'Backend Engineer',
+          value: 'F2E',
+          intro: ['Required: ', '熟悉 CS (Computer Science) 相關知識或相關科系畢業','熟悉 Linux 系統，Pinkoi 用 Ubuntu','熟悉 Python, PHP, Ruby, C, C#, C++, Java, Go 任何一種語言，Pinkoi 主要用 Python','熟悉 Web 程式開發','熟悉 SQL 或 NoSQL 資料庫','熟悉 MVC 開發架構，有 web framework (i.e. Django, Flask) 的使用經驗','有串接第三方 API (Facebook, Google, etc) 經驗','有 Git 或其他版本控制系統經驗', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/8',
+          sendCV: 'https://www.pinkoi.com/about/careers#backend-engineer',
+        },
+        {
+          text: 'Frontend Engineer',
+          value: 'F2E',
+          intro: ['Required: ', '熟悉 CS (Computer Science) 相關知識或相關科系畢業', '有開發 web and mobile web 的實務經驗', '熟悉 JavaScript (in its raw form not just using library like jQuery)', '熟悉 modern web technologies (ES2015, HTML5, CSS3, webpack, React, Sass, PostCSS, etc)', '清楚 cross browser compatibility 可能會碰到的問題 (web / mobile web)', '清楚 progressive enhancement / graceful degradation / responsive design 的概念', '有 Git 或其他版本控制系統經驗', '熟悉 TCP/IP, HTTP Protocol，有 API 整合 (自家, Facebook, Google, etc) 的實務經驗', '有 web application security sense (XSS, CORS, CSRF, cookies, etc)', '熟悉 web and mobile web browser performance tuning skills (加分)', '有國際化 (i18n, l10n) 的實務經驗。(加分)', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/9',
+          sendCV: 'https://www.pinkoi.com/about/careers#frontend-engineer',
+        },
+      ]
+    },
     // {
     //   text: 'Dcard',
     //   value: 'dcard',
