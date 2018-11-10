@@ -680,6 +680,12 @@ body{
   position: relative;
   padding: 75px 10% ;
 
+  & > .row {
+    .sponsor-content-area:not(:first-child) {
+      padding-bottom: 10px;
+    }
+  }
+
   .company-name {
     &:first-child {
       margin: 1em 0 0;
@@ -717,9 +723,9 @@ body{
     padding: 20px;
   }
   div.special {
-    border: 2px solid #777;
-    border-radius: 4px;
-    padding: 20px;
+    & > .company-logo {
+      border-bottom: 0px;
+    }
   }
 }
 

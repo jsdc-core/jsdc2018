@@ -6,7 +6,7 @@ block content
       div(class=key)
         img.company-logo(src=data.logo)
         if col > 2
-          .company-description!= data.description
+          .company-description!= data.description.replace(/\n/g, "<br>")
 
   .container-fluid#sponsors
     each sponsorItems, sponsorIndex in sponsors
