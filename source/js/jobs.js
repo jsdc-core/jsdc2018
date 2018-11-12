@@ -24,20 +24,20 @@
       ]
     },
     {
-      text: '鈦坦科技 Titansoft',
+      text: '新加坡商鈦坦科技 TITANSOFT',
       value: 'titansoft',
       jobs: [
         {
-          text: '軟體工程師 Software Engineer / Programmer(台北)',
+          text: 'Software Engineer / Programmer - 軟體工程師 (台北)',
           value: 'SW',
-          intro: ['薪資：50,000 以上或依經驗與能力面議', '條件：有 C# .Net, ECMA Script, AJAX, OO, SQL Server 2012 等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          intro: ['薪資：月新 50,000 以上或依經驗與能力面議', '條件：有 C# .Net, ECMA Script, AJAX, OO, SQL Server 2012 等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
           url: 'https://github.com/jsdc-core/jsdc2018/issues/10',
           sendCV: 'https://www.104.com.tw/job/?jobno=3ypjf&jobsource=',
         },
         {
           text: 'Senior Software Engineer / Programmer - 軟體工程師 (台北)',
           value: 'SSW',
-          intro: ['薪資：100,000 以上或依經驗與能力面議', '條件： 5 年軟體開發經驗且有 C# .Net, ECMA Script, AJAX, OO, SQL Server 2012 等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          intro: ['薪資：月薪 100,000 以上或依經驗與能力面議', '條件： 5 年軟體開發經驗且有 C# .Net, ECMA Script, AJAX, OO, SQL Server 2012 等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
           url: 'https://github.com/jsdc-core/jsdc2018/issues/11',
           sendCV: 'https://www.104.com.tw/job/?jobno=57xrr&jobsource=',
         },
