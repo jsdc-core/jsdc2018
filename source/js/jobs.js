@@ -30,7 +30,7 @@
         {
           text: 'Software Engineer / Programmer - 軟體工程師 (台北)',
           value: 'SW',
-          intro: ['薪資：月新 50,000 以上或依經驗與能力面議', '條件：有 C# .Net, ECMA Script, AJAX, OO, SQL Server 2012 等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          intro: ['薪資：月薪 50,000 以上或依經驗與能力面議', '條件：有 C# .Net, ECMA Script, AJAX, OO, SQL Server 2012 等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
           url: 'https://github.com/jsdc-core/jsdc2018/issues/10',
           sendCV: 'https://www.104.com.tw/job/?jobno=3ypjf&jobsource=',
         },
