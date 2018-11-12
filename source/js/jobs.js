@@ -46,7 +46,7 @@
           value: 'Data',
           intro: ['條件： 5 年以上資料採集、模組建立經驗且熟悉 R, Python, SQL 與第三方數據 (Facebook Insights, Adwords, etc...) 等經驗者佳', '(小編的陌生領域，有興趣者建議點下方的『詳細職缺資訊』了解更多)'],
           url: 'https://github.com/jsdc-core/jsdc2018/issues/12',
-          sendCV: 'https://www.104.com.tw/job/?jobno=57xrr&jobsource=',
+          sendCV: 'https://www.104.com.tw/job/?jobno=697oo&jobsource=',
         },
       ]
     },
