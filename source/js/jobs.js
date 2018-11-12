@@ -34,6 +34,20 @@
           url: 'https://github.com/jsdc-core/jsdc2018/issues/10',
           sendCV: 'https://www.104.com.tw/job/?jobno=3ypjf&jobsource=',
         },
+        {
+          text: 'Senior Software Engineer / Programmer - 軟體工程師 (台北)',
+          value: 'SSW',
+          intro: ['薪資：100,000 以上或依經驗與能力面議', '條件： 5 年軟體開發經驗且有 C# .Net, ECMA Script, AJAX, OO, SQL Server 2012 等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/11',
+          sendCV: 'https://www.104.com.tw/job/?jobno=57xrr&jobsource=',
+        },
+        {
+          text: 'Data Scientist 資料科學家',
+          value: 'Data',
+          intro: ['條件： 5 年以上資料採集、模組建立經驗且熟悉 R, Python, SQL 與第三方數據 (Facebook Insights, Adwords, etc...) 等經驗者佳', '(小編的陌生領域，有興趣者建議點下方的『詳細職缺資訊』了解更多)'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/12',
+          sendCV: 'https://www.104.com.tw/job/?jobno=57xrr&jobsource=',
+        },
       ]
     },
     {
