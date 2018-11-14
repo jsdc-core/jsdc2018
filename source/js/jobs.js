@@ -10,16 +10,52 @@
           value: 'F2E',
           intro: ['條件：2 年 HTML、CSS、JavaScript 與 1 年 React、Node.js、webpack 開發經驗', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
           url: 'https://github.com/jsdc-core/jsdc2018/issues/1'
-        },{
+        },
+        {
           text: 'Software QA Engineer',
           value: 'QA',
           intro: ['條件：有 FTP 輸入整合、微服務測試、白箱測試等經驗', '(小編的陌生領域，有興趣者建議點下方的『詳細職缺資訊』了解更多)'],
           url: 'https://github.com/jsdc-core/jsdc2018/issues/2'
-        },{
+        },
+        {
           text: 'Data Engineer (IHDP)',
           value: 'Data',
           intro: ['條件：會 Java / C#、Spark 等', '(小編的陌生領域，有興趣者建議點下方的『詳細職缺資訊』了解更多)'],
           url: 'https://github.com/jsdc-core/jsdc2018/issues/3'
+        },
+      ]
+    },
+    {
+      text: 'Oath（原 Yahoo!奇摩）',
+      value: 'oath',
+      jobs: [
+        {
+          text: 'FE/Sr. Engineer, E-Commerce',
+          value: 'FE_EC',
+          intro: ['條件：熟悉現代 JavaScript library (如：React, Angular, Node.js, etc) 且使用過測試框架等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/13',
+          sendCV: 'https://www.104.com.tw/job/?jobno=693bg&jobsource=',
+        },
+        {
+          text: 'FE/Sr. Engineer, Media Engineering',
+          value: 'FE_ME',
+          intro: ['條件：熟悉現代 JavaScript library (如：React, Angular, Node.js, etc) 且使用過測試框架等經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/14',
+          sendCV: 'https://www.104.com.tw/job/?jobno=5rvug&jobsource=',
+        },
+        {
+          text: 'BE/Sr. Engineer, E-Commerce',
+          value: 'BE_EC',
+          intro: ['條件：熟悉 PHP 或 Shell script、了解軟體工程週期以及有分散式系統實戰經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/15',
+          sendCV: 'https://www.104.com.tw/job/?jobno=5c070&jobsource=',
+        },
+        {
+          text: 'BE/Sr. Engineer, Media Engineering',
+          value: 'Data',
+          intro: ['條件：有 AWS 雲服務經驗、了解軟體工程週期以及擁有 Java 實戰經驗者佳', '想知道更多資訊可以到下方『詳細職缺資訊』觀看！'],
+          url: 'https://github.com/jsdc-core/jsdc2018/issues/16',
+          sendCV: 'https://www.104.com.tw/job/?jobno=5qf1p&jobsource=',
         },
       ]
     },
