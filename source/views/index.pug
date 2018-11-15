@@ -30,7 +30,7 @@ block content
             .ticket-price
               | TWD 2,500
             a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
-              | BOOK NOW
+              | 售完
         //- .ticket-info.col-md-6
         //-   .ticket-1
         //-     h3 Group Ticket (4 People)
@@ -38,6 +38,19 @@ block content
         //-       | TWD 2,300
         //-     a.ticket-booking(href="https://kktix.com/events/jsdc2018/registrations/new", target="_blank")
         //-       | BOOK NOW
+
+  section#ticket.test
+    .container
+      .row
+        .col-md-12
+          header.text-center
+            h2 社群筆記
+      .row
+        .col-md-6
+          a.btn.btn-info(href="https://hackmd.io/c/JSDC2018", target="_blank") HACKMD_JSDC
+        .col-md-6
+          a.btn.btn-info(href="https://gitter.im/jsdc-core/JSDC2015/~chat#initial", target="_blank") GITTER_JSDC
+
   section(style="background-image: url(../images/official/background.png);background-color: #f2f2f2")
     br
     .container
@@ -47,9 +60,21 @@ block content
             h2 See you at JSDC!
       .row
         .col-md-6
-          iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F2171180176454751%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
+          iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F2171180176454751%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden;width:100%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
         .col-md-6
-          iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F1947556955305591%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
+          iframe(src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FJSDC.TW%2Fvideos%2F1947556955305591%2F&show_text=1&width=560&height=370" width="560" height="508" style="border:none;overflow:hidden;width:100%;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media" allowFullScreen="true")
+    br
+  section.test(style="background-image: url(../images/official/background.png);background-color: #f2f2f2")
+    br
+    .container
+      .row
+        .col-md-12
+          header.text-center
+            h2 最新消息
+      .row
+        .col-md-12
+          a.twitter-timeline(href="https://twitter.com/jsdc_tw") Tweets by TwitterDev 
+          script(async src="https://platform.twitter.com/widgets.js" charset="utf-8")
     br
   br
   section#header(style="background-image: none")
@@ -85,9 +110,17 @@ block content
   //-         div.num_img
   //-           img(src="images/number/0.png", alt="")
   //-           img(src="images/number/0.png", alt="")
+block css
+  style(type='text/css').
+    #test { display: none; }
 block js
   script(src='./js/index.min.js')
   script.
     setTimeout(function(){
       document.querySelectorAll('#navbar ul li')[0].classList.add('active');
     }, 0);
+    var getUrlString = location.href;
+    var url = new URL(getUrlString);
+    if(url.searchParams.get('type')) {
+      $('.test').show();
+    }
