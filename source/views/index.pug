@@ -120,8 +120,10 @@ block js
     setTimeout(function(){
       document.querySelectorAll('#navbar ul li')[0].classList.add('active');
     }, 0);
-    var getUrlString = location.href;
-    var url = new URL(getUrlString);
-    if(url.searchParams.get('type')) {
-      $('.test').show();
-    }
+    setTimeout(function(){
+      var getUrlString = location.href;
+      var url = new URL(getUrlString);
+      if(url.searchParams.get('type')) {
+        $('.test').show();
+      }
+    }, 1000);
