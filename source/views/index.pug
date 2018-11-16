@@ -111,19 +111,9 @@ block content
   //-         div.num_img
   //-           img(src="images/number/0.png", alt="")
   //-           img(src="images/number/0.png", alt="")
-block css
-  style(type='text/css').
-    .test { display: none; }
 block js
   script(src='./js/index.min.js')
   script.
     setTimeout(function(){
       document.querySelectorAll('#navbar ul li')[0].classList.add('active');
     }, 0);
-    setTimeout(function(){
-      var getUrlString = location.href;
-      var url = new URL(getUrlString);
-      if(url.searchParams.get('type')) {
-        $('.test').show();
-      }
-    }, 1000);
