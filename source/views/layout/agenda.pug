@@ -44,6 +44,10 @@ block content
                             .tag-groups
                               if (languages[info.agenda.lang])
                                 span.event-lang #{languages[info.agenda.lang]}
+                              if (info.agenda.slide)
+                                a.label.label-info(target="_blank" href=info.agenda.slide) Slide
+                              if (info.agenda.youtube)
+                                a.label.label-danger(target="_blank" href=info.agenda.youtube) Youtube
                               each value in info.agenda.levels
                                 span.event-level(data-level=agendaLevel[value] class=value)
 
